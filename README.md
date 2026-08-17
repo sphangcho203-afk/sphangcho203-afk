@@ -12,11 +12,11 @@
 </h1>
 
 <p align="center">
-  <i>"The messy cool kid. Always different than the others — by design, not by accident."</i>
+  <i>"I build the systems people rely on without noticing."</i>
 </p>
 
 <p align="center">
-  <b>𝙲𝚘𝚍𝚎 𝚒𝚜 𝚝𝚑𝚎 𝚍𝚎𝚊𝚝𝚑 𝚗𝚘𝚝𝚎. 𝙴𝚟𝚎𝚛𝚢 𝚛𝚎𝚙𝚘 𝚒𝚜 𝚊 𝚗𝚊𝚖𝚎 𝚠𝚛𝚒𝚝𝚝𝚎𝚗 𝚒𝚗 𝚒𝚝.</b>
+  <b>𝙱𝚊𝚌𝚔𝚎𝚗𝚍 𝚖𝚒𝚗𝚍. 𝚀𝚞𝚒𝚎𝚝 𝚜𝚢𝚜𝚝𝚎𝚖𝚜. 𝙿𝚛𝚎𝚌𝚒𝚜𝚎 𝚎𝚡𝚎𝚌𝚞𝚝𝚒𝚘𝚗.</b>
 </p>
 
 <p align="center">
@@ -25,15 +25,16 @@
 
 ## 🍷 𝙲𝚕𝚊𝚜𝚜 𝙰 — 𝚃𝚑𝚎 𝙿𝚎𝚛𝚜𝚘𝚗𝚊
 
-> *"People don't get to choose how they're seen. But the ones who control themselves control everything else."*
+> *"The visible result is only the surface. The real work happens where nobody is looking."*
 
-I'm the one who sits quietly in the corner of the classroom, watching everyone while they watch each other.
-I build things other people only talk about. Cool isn't a style I wear — it's what happens when the work speaks louder than the person.
+I work behind the interface: designing APIs, services, automations, and the logic that keeps products moving when the visible layer gets complicated.
 
-- 🏫 **Class:** The messy cool kid — different from everyone else, on purpose
-- 📓 **Currently writing in:** APIs, bots, and Android AI assistants
-- 🦋 **Philosophy:** Move in silence. Let the commits do the talking.
-- ⚔️ **Specialty:** Turning "it's impossible" into "already merged"
+I prefer reliable systems over loud announcements, clear architecture over decoration, and execution over performance. The interesting decisions are usually hidden in the boundaries — authentication, data flow, failure recovery, and the small details that keep a system alive.
+
+- 🏫 **Role:** Backend engineer in progress — building from the control room
+- 📓 **Currently working on:** APIs, bots, Android AI assistants, and automation systems
+- 🦋 **Operating principle:** Keep the surface simple. Make the machinery dependable.
+- ⚔️ **Specialty:** Turning ambiguous ideas into working services
 
 <p align="center">
   <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663720095992/zKddVUKGQsdGTWVV.png" width="380" alt="red notebook"/>
@@ -41,7 +42,7 @@ I build things other people only talk about. Cool isn't a style I wear — it's 
 
 ## 🍷 𝙲𝚕𝚊𝚜𝚜 𝙱 — 𝚃𝚑𝚎 𝙲𝚊𝚜𝚎𝚏𝚒𝚕𝚎𝚜
 
-Repositories that already have names written in the note.
+Systems currently under observation — each repository is a different experiment in execution.
 
 | Repository | Case File |
 | --- | --- |
@@ -94,14 +95,14 @@ Repositories that already have names written in the note.
 
 ## 🍷 𝙲𝚕𝚊𝚜𝚜 𝙴 — 𝙻𝚊𝚜𝚝 𝚆𝚘𝚛𝚍𝚜 𝚒𝚗 𝚝𝚑𝚎 𝙽𝚘𝚝𝚎𝚋𝚘𝚘𝚔
 
-> *"A person's worth isn't decided by the crowd. It's decided by what they leave behind when the room goes quiet."*
+> *"A system reveals its quality when nobody is watching it."*
 
-This profile will change whenever I do. Watch the commit graph. That's my diary.
+This profile is a record of systems built, problems reduced, and decisions that survived contact with reality.
 
 <p align="center">
   <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663720095992/IogIZJhNmilzTlAv.png" width="100%" alt="divider"/>
 </p>
 
 <p align="center">
-  <sub><i>𝚂𝚙𝚑𝚊𝚗𝚐𝚌𝚑𝚘 · 𝙰𝙵𝙺 · 𝚆𝚊𝚝𝚌𝚑𝚒𝚗𝚐 𝚏𝚛𝚘𝚖 𝚝𝚑𝚎 𝚌𝚘𝚛𝚗𝚎𝚛 𝚜𝚎𝚊𝚝 🦋</i></sub>
+  <sub><i>𝚂𝚘𝚗𝚐𝚓𝚊 𝙿𝚑𝚊𝚗𝚐𝚌𝚑𝚘 · 𝙰𝙵𝙺 · 𝙱𝚞𝚒𝚕𝚍𝚒𝚗𝚐 𝚏𝚛𝚘𝚖 𝚋𝚎𝚑𝚒𝚗𝚍 𝚝𝚑𝚎 𝚜𝚢𝚜𝚝𝚎𝚖</i></sub>
 </p>
