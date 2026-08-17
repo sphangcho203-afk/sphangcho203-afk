@@ -1,6 +1,8 @@
-name: "Soft Red · Check In"
+name: "Burgundy & Charcoal · Check In"
 
-# A small, friendly verification workflow for APIs, services, bots, and Android projects.
+# A calm, friendly verification workflow for APIs, services, bots, and Android projects.
+# The visible language follows the profile palette: charcoal plum, muted burgundy,
+# dusty rose, rainy blue-gray, and warm amber.
 # Copy this file into .github/workflows/ in another repository and adjust the commands
 # that are specific to that project.
 
@@ -24,7 +26,7 @@ env:
 
 jobs:
   check:
-    name: "A small check-in"
+    name: "A quiet project check"
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -38,14 +40,22 @@ jobs:
         shell: bash
         run: |
           {
-            echo "## A small check-in"
+            echo "## A quiet check-in"
             echo ""
-            echo "- **Repository:** ${{ github.repository }}"
-            echo "- **Branch:** ${{ github.ref_name }}"
-            echo "- **Event:** ${{ github.event_name }}"
-            echo "- **Commit:** ${{ github.sha }}"
+            echo "- **Repository:** \`${{ github.repository }}\`"
+            echo "- **Branch:** \`${{ github.ref_name }}\`"
+            echo "- **Event:** \`${{ github.event_name }}\`"
+            echo "- **Commit:** \`${{ github.sha }}\`"
             echo ""
-            echo "> Checking the project gently, one part at a time."
+            echo "> A calm look through the project, one small part at a time."
+            echo ""
+            echo "| Palette note | Tone |"
+            echo "| --- | --- |"
+            echo "| Charcoal plum | \`#211B24\` |"
+            echo "| Muted burgundy | \`#8B3A46\` |"
+            echo "| Dusty rose | \`#B65C65\` |"
+            echo "| Rainy blue-gray | \`#65758B\` |"
+            echo "| Warm amber | \`#CB9A6B\` |"
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: "See what is here"
@@ -65,7 +75,7 @@ jobs:
           echo "has_gradle=$has_gradle" >> "$GITHUB_OUTPUT"
 
           {
-            echo "## What was found"
+            echo "## A little map of the project"
             echo ""
             echo "| Part | Found |"
             echo "| --- | --- |"
@@ -74,20 +84,20 @@ jobs:
             echo "| Gradle / Android | $has_gradle |"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: "Prepare Python"
+      - name: "Set up the Python corner"
         if: steps.stack.outputs.has_python == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: "Prepare Node.js"
+      - name: "Set up the Node.js corner"
         if: steps.stack.outputs.has_node == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "22"
 
-      - name: "Prepare Java for Android / Gradle"
+      - name: "Set up the Android corner"
         if: steps.stack.outputs.has_gradle == 'true'
         uses: actions/setup-java@v4
         with:
@@ -95,7 +105,7 @@ jobs:
           java-version: "17"
           cache: gradle
 
-      - name: "Install Python dependencies"
+      - name: "Bring in Python packages"
         if: steps.stack.outputs.has_python == 'true'
         shell: bash
         run: |
@@ -106,7 +116,7 @@ jobs:
             python -m pip install -e .
           fi
 
-      - name: "Install Node dependencies"
+      - name: "Bring in Node packages"
         if: steps.stack.outputs.has_node == 'true'
         shell: bash
         run: |
@@ -122,11 +132,11 @@ jobs:
             npm install
           fi
 
-      - name: "Check for accidental whitespace"
+      - name: "Look for small formatting dust"
         shell: bash
         run: git diff --check
 
-      - name: "Check Python projects"
+      - name: "Give Python a gentle check"
         if: steps.stack.outputs.has_python == 'true'
         shell: bash
         run: |
@@ -139,7 +149,7 @@ jobs:
             echo "No pytest suite found; compilation completed."
           fi
 
-      - name: "Check Node projects"
+      - name: "Give Node.js a gentle check"
         if: steps.stack.outputs.has_node == 'true'
         shell: bash
         run: |
@@ -152,22 +162,22 @@ jobs:
             echo "No test script found; dependency installation completed."
           fi
 
-      - name: "Check Android / Gradle projects"
+      - name: "Give Android / Gradle a gentle check"
         if: steps.stack.outputs.has_gradle == 'true'
         shell: bash
         run: |
           chmod +x ./gradlew
           ./gradlew test --no-daemon --stacktrace
 
-      - name: "Finish the check-in"
+      - name: "Leave a closing note"
         if: always()
         shell: bash
         run: |
           {
             echo ""
-            echo "## Finished"
+            echo "## A little closing note"
             echo ""
-            echo "This check-in completed with status: **${{ job.status }}**"
+            echo "This check-in ended with status: **${{ job.status }}**"
             echo ""
-            echo "> Small progress still counts."
+            echo "> Small progress still counts, especially on unfinished projects."
           } >> "$GITHUB_STEP_SUMMARY"
