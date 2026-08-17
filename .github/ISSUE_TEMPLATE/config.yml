@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Crimson Casefile · Security Disclosure"
+    url: https://github.com/sphangcho203-afk/sphangcho203-afk/security/advisories/new
+    about: "Do not publish sensitive vulnerabilities in a public issue. Open a private security advisory instead."
+  - name: "Repository Documentation"
+    url: https://github.com/sphangcho203-afk/sphangcho203-afk/blob/main/REPOSITORY_README_TEMPLATE.md
+    about: "Read the repository casefile before opening a new investigation."

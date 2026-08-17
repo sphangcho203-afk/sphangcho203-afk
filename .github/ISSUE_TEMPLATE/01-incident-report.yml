@@ -1,0 +1,102 @@
+name: "Incident Report · Evidence Required"
+description: "Report a reproducible failure, regression, or unexpected system behavior."
+title: "[INCIDENT] "
+labels:
+  - incident
+  - needs-triage
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # CRIMSON CASEFILE · INCIDENT REPORT
+
+        > The visible failure is only the surface. Submit the evidence beneath it.
+
+        Please remove secrets, tokens, private URLs, and personal data before submitting. If the issue is a security vulnerability, use the private security disclosure link instead.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Case summary
+      description: "State the failure in one precise sentence."
+      placeholder: "The API returns ... when ..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Operational severity
+      description: "How much of the system is affected?"
+      options:
+        - "S1 · Critical — service unavailable or data integrity at risk"
+        - "S2 · High — major feature blocked"
+        - "S3 · Medium — degraded behavior with a workaround"
+        - "S4 · Low — minor defect or cosmetic inconsistency"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "Record the execution context."
+      placeholder: |
+        - Repository version / commit:
+        - OS:
+        - Runtime and version:
+        - Browser / device:
+        - Deployment environment:
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction protocol
+      description: "Give the smallest sequence of steps that reliably exposes the incident."
+      placeholder: |
+        1. Start with ...
+        2. Send ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: "What should the system have done?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: "What did the system actually do? Include exact error output where possible."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: "Attach logs, screenshots, request IDs, stack traces, or a minimal reproduction. Redact secrets."
+      placeholder: "Paste sanitized logs or links here."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Final checks
+      options:
+        - label: "I searched existing issues before opening this case."
+          required: true
+        - label: "I removed secrets and private data from this report."
+          required: true
+        - label: "I can reproduce this behavior from the information provided."
+          required: true
