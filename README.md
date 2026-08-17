@@ -27,7 +27,27 @@
 
 ## hi, welcome in
 
-This is my small corner of the internet. I like backend systems, APIs, Android projects, bots, automation, and ideas that begin as a messy note and slowly become something real.
+You found my little corner of the internet. Grab the other chair by the desk, take your time, and stay as long as you like. The tea is warm, the window is open, and the rain outside is doing most of the background noise for both of us.
+
+### a small conversation
+
+Before you look around, a few quick things I like to ask, because a visit should feel a little more than a scroll.
+
+| A little question | My usual answer |
+| --- | --- |
+| what time is it near your window? | probably late, probably fine |
+| is something playing quietly in the background? | lo-fi or rain sounds, almost always |
+| what did you learn today? | something small, but it counts |
+| what do you want to build someday? | the thing I keep sketching but keep postponing |
+
+### how to talk to me here
+
+If something on this profile catches you, say hi in an issue or a discussion — even a small one. I read everything, reply slowly but honestly, and I like questions about projects, ideas, and how certain small tools work.
+
+- **say hi or start a chat** → open a `new idea` issue in one of my repositories
+- **share a small thought** → use the `soft project note` form
+- **found something strange?** → the `something feels off` form is made for that
+- **just looking around** → that is completely fine too. thank you for visiting
 
 I am still learning, still experimenting, and still leaving half-finished sketches around the room. Some projects are practical. Some are curious. Some are just here because I wanted to see if I could make them work.
 
