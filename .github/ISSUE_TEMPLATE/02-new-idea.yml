@@ -1,0 +1,75 @@
+name: "New Idea"
+description: "Share a feature, improvement, experiment, or small idea."
+title: "[IDEA] "
+labels:
+  - idea
+  - maybe-later
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # a new idea
+
+        This does not need to be a perfect plan. A clear problem, a rough thought, or a tiny sketch is enough to start a conversation.
+
+  - type: input
+    id: idea
+    attributes:
+      label: What is the idea?
+      description: "Give it a short name."
+      placeholder: "A small way to ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why would it be useful?
+      description: "What would this make easier, nicer, or more interesting?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Rough sketch
+      description: "Describe the possible behavior, interface, command, or workflow."
+      placeholder: |
+        - When someone does ...
+        - The project could ...
+        - The result would be ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part does it touch?
+      options:
+        - "API or backend"
+        - "Database or data"
+        - "Android or client"
+        - "Bot or automation"
+        - "Documentation"
+        - "Visual style"
+        - "Not sure yet"
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Other thoughts
+      description: "Anything you considered, links you found, or questions you have."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: "I searched existing issues and discussions first."
+          required: true
+        - label: "I am happy for this idea to be discussed or changed."
+          required: true

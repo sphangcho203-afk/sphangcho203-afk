@@ -1,0 +1,96 @@
+name: "Something Feels Off"
+description: "Tell me about a bug, regression, or unexpected result."
+title: "[BUG] "
+labels:
+  - bug
+  - needs-a-look
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # something feels off
+
+        No need to make it sound formal. Just show what happened, what you expected, and anything that might help reproduce it.
+
+        Please remove secrets, tokens, private URLs, and personal data before submitting. Sensitive security problems should use the private security link instead.
+
+  - type: input
+    id: summary
+    attributes:
+      label: What happened?
+      description: "Describe the problem in one sentence."
+      placeholder: "The API returns ... when ..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: How much does it affect you?
+      options:
+        - "A lot — I cannot continue"
+        - "Somewhat — there is a workaround"
+        - "A little — it is mostly a small annoyance"
+        - "Not sure yet"
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Where did it happen?
+      description: "Share the relevant environment."
+      placeholder: |
+        - Repository version / commit:
+        - OS:
+        - Runtime and version:
+        - Browser / device:
+        - Deployment environment:
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be reproduced?
+      description: "A short list of steps is perfect."
+      placeholder: |
+        1. Start with ...
+        2. Try ...
+        3. Notice ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: "Tell me what you thought would happen."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: "Include the exact error, screenshot, or output if you have it."
+    validations:
+      required: true
+
+  - type: textarea
+    id: helpful
+    attributes:
+      label: Anything else that might help?
+      description: "Logs, screenshots, request IDs, or a small reproduction are welcome. Please redact secrets."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: "I searched existing issues first."
+          required: true
+        - label: "I removed secrets and private information."
+          required: true

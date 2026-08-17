@@ -1,8 +1,8 @@
-name: "Crimson Casefile · Backend Verification"
+name: "Soft Red · Check In"
 
-# A quiet, repeatable verification layer for APIs, services, bots, and Android projects.
-# Copy this file into .github/workflows/ in any repository and adjust only the commands
-# that are specific to that repository.
+# A small, friendly verification workflow for APIs, services, bots, and Android projects.
+# Copy this file into .github/workflows/ in another repository and adjust the commands
+# that are specific to that project.
 
 on:
   push:
@@ -15,7 +15,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: crimson-casefile-${{ github.workflow }}-${{ github.ref }}
+  group: soft-red-check-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
@@ -23,32 +23,32 @@ env:
   PYTHONDONTWRITEBYTECODE: "1"
 
 jobs:
-  casefile:
-    name: "Casefile · Inspect and Verify"
+  check:
+    name: "A small check-in"
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
     steps:
-      - name: "Class A · Open the case"
+      - name: "Open the project"
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      - name: "Class A · Record repository evidence"
+      - name: "Leave a little note"
         shell: bash
         run: |
           {
-            echo "## Crimson Casefile"
+            echo "## A small check-in"
             echo ""
             echo "- **Repository:** ${{ github.repository }}"
-            echo "- **Ref:** ${{ github.ref_name }}"
+            echo "- **Branch:** ${{ github.ref_name }}"
             echo "- **Event:** ${{ github.event_name }}"
             echo "- **Commit:** ${{ github.sha }}"
             echo ""
-            echo "> The visible result is only the surface. The evidence is in the execution path."
+            echo "> Checking the project gently, one part at a time."
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: "Class B · Detect the stack"
+      - name: "See what is here"
         id: stack
         shell: bash
         run: |
@@ -65,29 +65,29 @@ jobs:
           echo "has_gradle=$has_gradle" >> "$GITHUB_OUTPUT"
 
           {
-            echo "## Stack detected"
+            echo "## What was found"
             echo ""
-            echo "| Layer | Status |"
+            echo "| Part | Found |"
             echo "| --- | --- |"
             echo "| Python | $has_python |"
             echo "| Node.js | $has_node |"
             echo "| Gradle / Android | $has_gradle |"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: "Class C · Prepare Python"
+      - name: "Prepare Python"
         if: steps.stack.outputs.has_python == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: "Class C · Prepare Node.js"
+      - name: "Prepare Node.js"
         if: steps.stack.outputs.has_node == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: "22"
 
-      - name: "Class C · Prepare Java for Android / Gradle"
+      - name: "Prepare Java for Android / Gradle"
         if: steps.stack.outputs.has_gradle == 'true'
         uses: actions/setup-java@v4
         with:
@@ -95,7 +95,7 @@ jobs:
           java-version: "17"
           cache: gradle
 
-      - name: "Class C · Install Python dependencies"
+      - name: "Install Python dependencies"
         if: steps.stack.outputs.has_python == 'true'
         shell: bash
         run: |
@@ -106,7 +106,7 @@ jobs:
             python -m pip install -e .
           fi
 
-      - name: "Class C · Install Node dependencies"
+      - name: "Install Node dependencies"
         if: steps.stack.outputs.has_node == 'true'
         shell: bash
         run: |
@@ -122,15 +122,11 @@ jobs:
             npm install
           fi
 
-      - name: "Class D · Check the boundaries"
+      - name: "Check for accidental whitespace"
         shell: bash
-        run: |
-          git diff --check
-          if [[ -f .github/workflows/crimson-casefile.yml ]]; then
-            echo "Workflow syntax file found."
-          fi
+        run: git diff --check
 
-      - name: "Class D · Verify Python services"
+      - name: "Check Python projects"
         if: steps.stack.outputs.has_python == 'true'
         shell: bash
         run: |
@@ -140,10 +136,10 @@ jobs:
           elif python -c "import importlib.util; raise SystemExit(0 if importlib.util.find_spec('pytest') else 1)" 2>/dev/null; then
             python -m pytest -q
           else
-            echo "No pytest suite detected; bytecode compilation completed."
+            echo "No pytest suite found; compilation completed."
           fi
 
-      - name: "Class D · Verify Node services"
+      - name: "Check Node projects"
         if: steps.stack.outputs.has_node == 'true'
         shell: bash
         run: |
@@ -153,25 +149,25 @@ jobs:
           if node -e "const p=require('./package.json'); process.exit(p.scripts?.test ? 0 : 1)" 2>/dev/null; then
             npm test -- --if-present
           else
-            echo "No test script detected. Dependency installation completed."
+            echo "No test script found; dependency installation completed."
           fi
 
-      - name: "Class D · Verify Android / Gradle services"
+      - name: "Check Android / Gradle projects"
         if: steps.stack.outputs.has_gradle == 'true'
         shell: bash
         run: |
           chmod +x ./gradlew
           ./gradlew test --no-daemon --stacktrace
 
-      - name: "Class E · Close the case with evidence"
+      - name: "Finish the check-in"
         if: always()
         shell: bash
         run: |
           {
             echo ""
-            echo "## Verification record"
+            echo "## Finished"
             echo ""
-            echo "The casefile completed with status: **${{ job.status }}**"
+            echo "This check-in completed with status: **${{ job.status }}**"
             echo ""
-            echo "> Reliable systems do not need to announce themselves. They leave evidence."
+            echo "> Small progress still counts."
           } >> "$GITHUB_STEP_SUMMARY"

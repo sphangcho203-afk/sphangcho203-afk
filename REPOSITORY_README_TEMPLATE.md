@@ -1,68 +1,71 @@
 <!--
-  CRIMSON CASEFILE README TEMPLATE
-  Death Note × Classroom of the Elite inspired.
+  SOFT RED README TEMPLATE
+  A calm, slightly messy digital-world style for personal projects.
   Replace every [PLACEHOLDER] before publishing.
 -->
 
 <p align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663720095992/IogIZJhNmilzTlAv.png" width="100%" alt="Crimson casefile divider" />
+  <img src="./assets/soft-banner.png" width="100%" alt="Warm rainy digital workspace" />
 </p>
 
 <h1 align="center">[PROJECT NAME]</h1>
 
 <p align="center">
-  <i>[One sharp sentence describing the project. Keep it controlled, cold, and specific.]</i>
+  <i>[A simple sentence about what this project is.]</i>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/status-[STATUS]-8B0000?style=for-the-badge&labelColor=090909" alt="status" />
-  <img src="https://img.shields.io/badge/version-[VERSION]-B11226?style=for-the-badge&labelColor=090909" alt="version" />
-  <img src="https://img.shields.io/badge/license-[LICENSE]-5C0000?style=for-the-badge&labelColor=090909" alt="license" />
+  <img src="https://img.shields.io/badge/status-[STATUS]-8b3a46?style=flat-square&labelColor=211b24" alt="status" />
+  <img src="https://img.shields.io/badge/version-[VERSION]-b65c65?style=flat-square&labelColor=211b24" alt="version" />
+  <img src="https://img.shields.io/badge/license-[LICENSE]-8b6f9b?style=flat-square&labelColor=211b24" alt="license" />
 </p>
 
-> **CASE FILE [00] — THE PREMISE**
+> **a small note about this project**
 >
-> [Explain what this project does, who it is for, and what problem it solves. Write like an intelligence brief, not marketing copy.]
+> [Explain what the project does, why it exists, and what kind of problem or curiosity started it. Keep the writing honest and easy to understand.]
 
 <p align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663720095992/IogIZJhNmilzTlAv.png" width="100%" alt="Crimson divider" />
+  <img src="./assets/soft-divider.png" width="100%" alt="Soft red divider" />
 </p>
 
-## 𝙸. 𝚂𝚢𝚜𝚝𝚎𝚖 𝙾𝚟𝚎𝚛𝚟𝚒𝚎𝚠
+## what this is
 
-```text
-[INPUT]  →  [PROCESSING LAYER]  →  [DECISION / OUTPUT]
-```
+[Describe the project in a few friendly paragraphs. Explain the main idea without trying to make it sound bigger than it is.]
 
-[Describe the architecture in a few precise paragraphs. Explain the important boundaries, data flow, and the design choice that makes this system different.]
+## the moving parts
 
-## 𝙸𝙸. 𝙵𝚎𝚊𝚝𝚞𝚛𝚎 𝙵𝚒𝚕𝚎
-
-| Capability | What it does |
+| Part | What it does |
 | --- | --- |
-| **[Feature 01]** | [Short, concrete explanation.] |
-| **[Feature 02]** | [Short, concrete explanation.] |
-| **[Feature 03]** | [Short, concrete explanation.] |
-| **[Feature 04]** | [Short, concrete explanation.] |
+| **[Part 01]** | [Short, clear explanation.] |
+| **[Part 02]** | [Short, clear explanation.] |
+| **[Part 03]** | [Short, clear explanation.] |
+| **[Part 04]** | [Short, clear explanation.] |
 
-## 𝙸𝙸𝙸. 𝚃𝚑𝚎 𝙰𝚛𝚜𝚎𝚗𝚊𝚕
+## features
+
+- [Feature that is already working]
+- [Feature that is useful to people using the project]
+- [Feature that was fun or interesting to build]
+- [Feature that is still being explored]
+
+## tools used
 
 <p align="left">
-  <img src="https://img.shields.io/badge/[LANGUAGE]-[COLOR]?style=for-the-badge&logo=[LOGO]&logoColor=white" alt="language" />
-  <img src="https://img.shields.io/badge/[FRAMEWORK]-[COLOR]?style=for-the-badge&logo=[LOGO]&logoColor=white" alt="framework" />
-  <img src="https://img.shields.io/badge/[DATABASE]-[COLOR]?style=for-the-badge&logo=[LOGO]&logoColor=white" alt="database" />
-  <img src="https://img.shields.io/badge/[TOOL]-[COLOR]?style=for-the-badge&logo=[LOGO]&logoColor=white" alt="tool" />
+  <img src="https://img.shields.io/badge/[LANGUAGE]-[COLOR]?style=flat-square&logo=[LOGO]&logoColor=white" alt="language" />
+  <img src="https://img.shields.io/badge/[FRAMEWORK]-[COLOR]?style=flat-square&logo=[LOGO]&logoColor=white" alt="framework" />
+  <img src="https://img.shields.io/badge/[DATABASE]-[COLOR]?style=flat-square&logo=[LOGO]&logoColor=white" alt="database" />
+  <img src="https://img.shields.io/badge/[TOOL]-[COLOR]?style=flat-square&logo=[LOGO]&logoColor=white" alt="tool" />
 </p>
 
-## 𝙸𝚅. 𝙰𝚌𝚌𝚎𝚜𝚜 𝙿𝚛𝚘𝚝𝚘𝚌𝚘𝚕
+## getting it running
 
-### Requirements
+### requirements
 
 - [Runtime or language version]
 - [Database or service requirement]
-- [Environment requirement]
+- [Other requirement]
 
-### Installation
+### installation
 
 ```bash
 git clone https://github.com/[USERNAME]/[REPOSITORY].git
@@ -70,9 +73,9 @@ cd [REPOSITORY]
 [INSTALL COMMAND]
 ```
 
-### Configuration
+### configuration
 
-Create a `.env` file from the example below. Never commit real credentials.
+Create a `.env` file using the example below. Keep real credentials out of the repository.
 
 ```env
 [KEY]=[VALUE]
@@ -80,15 +83,15 @@ Create a `.env` file from the example below. Never commit real credentials.
 [KEY]=[VALUE]
 ```
 
-### Launch
+### start
 
 ```bash
 [DEVELOPMENT COMMAND]
 ```
 
-## 𝚅. 𝙰𝙿𝙸 𝙾𝚛 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝙸𝚗𝚝𝚎𝚛𝚏𝚊𝚌𝚎
+## routes or commands
 
-| Method | Endpoint / Command | Purpose |
+| Method | Endpoint / Command | What it does |
 | --- | --- | --- |
 | `[GET]` | `/[route]` | [Purpose] |
 | `[POST]` | `/[route]` | [Purpose] |
@@ -98,59 +101,52 @@ Create a `.env` file from the example below. Never commit real credentials.
 curl -X [METHOD] http://localhost:[PORT]/[ROUTE]
 ```
 
-## 𝚅𝙸. 𝙼𝚒𝚜𝚜𝚒𝚘𝚗 𝙲𝚘𝚗𝚝𝚛𝚘𝚕
-
-```text
-[ ] [Milestone one]
-[ ] [Milestone two]
-[ ] [Milestone three]
-[ ] [Milestone four]
-```
-
-## 𝚅𝙸𝙸. 𝙰𝚛𝚌𝚑𝚒𝚝𝚎𝚌𝚝𝚞𝚛𝚎 𝙽𝚘𝚝𝚎
-
-[Add a diagram, screenshot, or short explanation of the system's most important internal decision. This is where you show the backend mind behind the project.]
+## a little map of the project
 
 ```mermaid
 flowchart LR
-    A[Client] --> B[API Layer]
+    A[Input] --> B[Application]
     B --> C[Service Logic]
-    C --> D[(Data Store)]
-    C --> E[External Service]
+    C --> D[(Data)]
+    C --> E[Optional Integration]
 ```
 
-## 𝚅𝙸𝙸𝙸. 𝙲𝚘𝚗𝚝𝚛𝚒𝚋𝚞𝚝𝚒𝚗𝚐
+[Add a screenshot or project-specific diagram here if it helps somebody understand the project.]
 
-[Explain how another engineer can submit a useful change. Include branch naming, testing expectations, and commit conventions if relevant.]
+## what is next
+
+```text
+[ ] [Next small improvement]
+[ ] [Something to learn]
+[ ] [A bug to understand]
+[ ] [An idea for later]
+```
+
+## contributing
+
+If you find something interesting, confusing, or broken, feel free to open an issue. Small improvements, kind feedback, and different ideas are welcome.
 
 ```bash
 git checkout -b feature/[short-name]
 [TEST COMMAND]
-git commit -m "feat: [short description]"
+git commit -m "[short description]"
 ```
 
-## 𝙸𝚇. 𝙲𝚊𝚜𝚎 𝙲𝚕𝚘𝚜𝚎𝚍
+## notes from the desk
 
-> [End with one original line about systems, discipline, execution, or remaining unreadable to the crowd. Do not use a copied anime quote.]
+[Add an honest closing note about what you learned, what is unfinished, or what you want to explore next.]
 
 <p align="center">
-  <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663720095992/IogIZJhNmilzTlAv.png" width="100%" alt="Crimson casefile divider" />
+  <img src="./assets/soft-divider.png" width="100%" alt="Soft red divider" />
 </p>
 
 <p align="center">
-  <sub><i>Built quietly. Tested properly. Released when the system is ready.</i></sub>
+  <sub><i>made slowly, fixed often, still a work in progress.</i></sub>
 </p>
 
-<!-- Optional: add a project-specific screenshot above the System Overview. -->
-<!-- Optional: replace external image URLs with local assets under /assets for permanence. -->
-<!-- Optional: remove any section that does not apply to the project. -->
-
-## Template voice guide
-
-Use a controlled, intelligent tone. Describe implementation decisions, not exaggerated claims. Prefer phrases such as **control plane**, **service boundary**, **execution path**, **failure recovery**, **data integrity**, and **observable behavior**. Avoid phrases such as “messy cool kid,” “built different,” or generic “future developer” language.
-
-The theme should feel like a private case file: dark, precise, and slightly unreadable to outsiders. The project itself should remain clear enough that another engineer can install it, understand it, and contribute without guessing.
-
-## Credits
-
-This template was designed for **Songja Phangcho** and the `sphangcho203-afk` profile aesthetic.
+<!--
+  Voice guide:
+  Keep the README warm, clear, personal, and a little imperfect.
+  Avoid dramatic quotes, exaggerated claims, fake confidence, or intimidating language.
+  It should feel like opening a project folder in someone's cozy digital room.
+-->
