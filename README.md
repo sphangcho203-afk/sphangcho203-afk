@@ -1,10 +1,10 @@
-<p align="center">
+<div align="center">
   <img src="./assets/soft-banner.png" width="100%" alt="A warm, rainy digital workspace with red lights and butterflies" />
-</p>
+</div>
 
-<p align="center">
-  <img src="./assets/soft-hero.png" width="360" alt="A cozy red-lit workspace with sketches, a laptop, and headphones" />
-</p>
+<div align="center">
+  <img src="./assets/soft-hero.png" width="340" alt="A cozy red-lit workspace with sketches, a laptop, and headphones" />
+</div>
 
 <h1 align="center">
   <b>Songja Phangcho</b><br/>
@@ -21,9 +21,9 @@
   <img src="https://img.shields.io/badge/world-online-cb7b83?style=flat-square&labelColor=211b24" alt="world: online" />
 </p>
 
-<p align="center">
+<div align="center">
   <img src="./assets/soft-divider.png" width="100%" alt="soft red divider" />
-</p>
+</div>
 
 ## hi, welcome in
 
@@ -122,9 +122,9 @@ A little dark, a little warm, and not too polished — like the room where these
 - fixing old projects when I remember them
 - leaving room for the next weird little experiment
 
-<p align="center">
+<div align="center">
   <img src="./assets/soft-divider.png" width="100%" alt="soft red divider" />
-</p>
+</div>
 
 <p align="center">
   <i>thanks for visiting my little world.</i><br/>
