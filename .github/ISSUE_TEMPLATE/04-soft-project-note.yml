@@ -3,7 +3,7 @@ description: "Leave a small note about the project, its docs, or its overall fee
 title: "[NOTE] "
 labels:
   - notes
-  - soft-red
+  - soft-burgundy
 assignees: []
 
 body:

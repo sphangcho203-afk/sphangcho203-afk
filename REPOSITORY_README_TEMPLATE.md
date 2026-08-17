@@ -1,5 +1,5 @@
 <!--
-  SOFT RED README TEMPLATE
+  SOFT BURGUNDY README TEMPLATE
   A calm, slightly messy digital-world style for personal projects.
   Replace every [PLACEHOLDER] before publishing.
 -->
@@ -17,7 +17,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/status-[STATUS]-8b3a46?style=flat-square&labelColor=211b24" alt="status" />
   <img src="https://img.shields.io/badge/version-[VERSION]-b65c65?style=flat-square&labelColor=211b24" alt="version" />
-  <img src="https://img.shields.io/badge/license-[LICENSE]-8b6f9b?style=flat-square&labelColor=211b24" alt="license" />
+  <img src="https://img.shields.io/badge/license-[LICENSE]-8b3a46?style=flat-square&labelColor=211b24" alt="license" />
 </p>
 
 > **a small note about this project**
@@ -25,7 +25,7 @@
 > [Explain what the project does, why it exists, and what kind of problem or curiosity started it. Keep the writing honest and easy to understand.]
 
 <p align="center">
-  <img src="./assets/soft-divider.png" width="100%" alt="Soft red divider" />
+  <img src="./assets/soft-divider.png" width="100%" alt="Soft burgundy divider" />
 </p>
 
 ## what this is
@@ -137,7 +137,7 @@ git commit -m "[short description]"
 [Add an honest closing note about what you learned, what is unfinished, or what you want to explore next.]
 
 <p align="center">
-  <img src="./assets/soft-divider.png" width="100%" alt="Soft red divider" />
+  <img src="./assets/soft-divider.png" width="100%" alt="Soft burgundy divider" />
 </p>
 
 <p align="center">

@@ -22,7 +22,7 @@
 </p>
 
 <div align="center">
-  <img src="./assets/soft-divider.png" width="100%" alt="soft red divider" />
+  <img src="./assets/soft-divider.png" width="100%" alt="soft burgundy divider" />
 </div>
 
 ## hi, welcome in
@@ -89,7 +89,7 @@ A little dark, a little warm, and not too polished — like the room where these
 ## tools I keep nearby
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Python-8b6f9b?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Python-8b3a46?style=flat-square&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/Kotlin-9a719c?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
   <img src="https://img.shields.io/badge/TypeScript-5f7896?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/JavaScript-b68a58?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript" />
@@ -123,7 +123,7 @@ A little dark, a little warm, and not too polished — like the room where these
 - leaving room for the next weird little experiment
 
 <div align="center">
-  <img src="./assets/soft-divider.png" width="100%" alt="soft red divider" />
+  <img src="./assets/soft-divider.png" width="100%" alt="soft burgundy divider" />
 </div>
 
 <p align="center">
