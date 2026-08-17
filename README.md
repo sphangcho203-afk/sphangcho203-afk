@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <img src="./assets/soft-hero.png" width="340" alt="A cozy red-lit workspace with sketches, a laptop, and headphones" />
+  <img src="./assets/anime-girl.png" width="340" alt="An anime girl at a cozy desk by a rainy window with warm lamp light" />
 </div>
 
 <h1 align="center">
