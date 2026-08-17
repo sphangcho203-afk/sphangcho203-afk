@@ -1,0 +1,177 @@
+name: "Crimson Casefile · Backend Verification"
+
+# A quiet, repeatable verification layer for APIs, services, bots, and Android projects.
+# Copy this file into .github/workflows/ in any repository and adjust only the commands
+# that are specific to that repository.
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crimson-casefile-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FORCE_COLOR: "1"
+  PYTHONDONTWRITEBYTECODE: "1"
+
+jobs:
+  casefile:
+    name: "Casefile · Inspect and Verify"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: "Class A · Open the case"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: "Class A · Record repository evidence"
+        shell: bash
+        run: |
+          {
+            echo "## Crimson Casefile"
+            echo ""
+            echo "- **Repository:** ${{ github.repository }}"
+            echo "- **Ref:** ${{ github.ref_name }}"
+            echo "- **Event:** ${{ github.event_name }}"
+            echo "- **Commit:** ${{ github.sha }}"
+            echo ""
+            echo "> The visible result is only the surface. The evidence is in the execution path."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: "Class B · Detect the stack"
+        id: stack
+        shell: bash
+        run: |
+          has_python=false
+          has_node=false
+          has_gradle=false
+
+          [[ -f pyproject.toml || -f requirements.txt || -f setup.py ]] && has_python=true
+          [[ -f package.json ]] && has_node=true
+          [[ -f gradlew ]] && has_gradle=true
+
+          echo "has_python=$has_python" >> "$GITHUB_OUTPUT"
+          echo "has_node=$has_node" >> "$GITHUB_OUTPUT"
+          echo "has_gradle=$has_gradle" >> "$GITHUB_OUTPUT"
+
+          {
+            echo "## Stack detected"
+            echo ""
+            echo "| Layer | Status |"
+            echo "| --- | --- |"
+            echo "| Python | $has_python |"
+            echo "| Node.js | $has_node |"
+            echo "| Gradle / Android | $has_gradle |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: "Class C · Prepare Python"
+        if: steps.stack.outputs.has_python == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: "Class C · Prepare Node.js"
+        if: steps.stack.outputs.has_node == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: "Class C · Prepare Java for Android / Gradle"
+        if: steps.stack.outputs.has_gradle == 'true'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: gradle
+
+      - name: "Class C · Install Python dependencies"
+        if: steps.stack.outputs.has_python == 'true'
+        shell: bash
+        run: |
+          python -m pip install --upgrade pip
+          if [[ -f requirements.txt ]]; then
+            python -m pip install -r requirements.txt
+          elif [[ -f pyproject.toml ]]; then
+            python -m pip install -e .
+          fi
+
+      - name: "Class C · Install Node dependencies"
+        if: steps.stack.outputs.has_node == 'true'
+        shell: bash
+        run: |
+          if [[ -f pnpm-lock.yaml ]]; then
+            corepack enable
+            pnpm install --frozen-lockfile
+          elif [[ -f yarn.lock ]]; then
+            corepack enable
+            yarn install --immutable
+          elif [[ -f package-lock.json ]]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: "Class D · Check the boundaries"
+        shell: bash
+        run: |
+          git diff --check
+          if [[ -f .github/workflows/crimson-casefile.yml ]]; then
+            echo "Workflow syntax file found."
+          fi
+
+      - name: "Class D · Verify Python services"
+        if: steps.stack.outputs.has_python == 'true'
+        shell: bash
+        run: |
+          python -m compileall -q .
+          if [[ -d tests ]]; then
+            python -m pytest -q
+          elif python -c "import importlib.util; raise SystemExit(0 if importlib.util.find_spec('pytest') else 1)" 2>/dev/null; then
+            python -m pytest -q
+          else
+            echo "No pytest suite detected; bytecode compilation completed."
+          fi
+
+      - name: "Class D · Verify Node services"
+        if: steps.stack.outputs.has_node == 'true'
+        shell: bash
+        run: |
+          if node -e "const p=require('./package.json'); process.exit(p.scripts?.lint ? 0 : 1)" 2>/dev/null; then
+            npm run lint
+          fi
+          if node -e "const p=require('./package.json'); process.exit(p.scripts?.test ? 0 : 1)" 2>/dev/null; then
+            npm test -- --if-present
+          else
+            echo "No test script detected. Dependency installation completed."
+          fi
+
+      - name: "Class D · Verify Android / Gradle services"
+        if: steps.stack.outputs.has_gradle == 'true'
+        shell: bash
+        run: |
+          chmod +x ./gradlew
+          ./gradlew test --no-daemon --stacktrace
+
+      - name: "Class E · Close the case with evidence"
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo ""
+            echo "## Verification record"
+            echo ""
+            echo "The casefile completed with status: **${{ job.status }}**"
+            echo ""
+            echo "> Reliable systems do not need to announce themselves. They leave evidence."
+          } >> "$GITHUB_STEP_SUMMARY"
