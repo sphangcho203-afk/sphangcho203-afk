@@ -1,0 +1,55 @@
+name: "Soft Project Note"
+description: "Leave a small note about the project, its docs, or its overall feel."
+title: "[NOTE] "
+labels:
+  - notes
+  - soft-red
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # a small note
+
+        This is a low-pressure place for documentation suggestions, usability thoughts, visual feedback, or anything that does not fit the other forms.
+
+        The project is intentionally a little imperfect. Clear, kind notes help it grow.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What part are you talking about?
+      options:
+        - "README or documentation"
+        - "Visual style or layout"
+        - "A small usability detail"
+        - "A project idea"
+        - "Something else"
+    validations:
+      required: true
+
+  - type: textarea
+    id: note
+    attributes:
+      label: Your note
+      description: "Write it naturally. A few sentences or a rough thought is enough."
+      placeholder: "I noticed ... / It might be nice if ... / I was wondering whether ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference
+    attributes:
+      label: Helpful reference
+      description: "Add a screenshot, link, example, or small detail if one exists. Please remove private information."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sending
+      options:
+        - label: "I removed secrets and private information."
+          required: true
+        - label: "I kept the note constructive and easy to understand."
+          required: true
