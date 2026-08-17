@@ -60,7 +60,7 @@ I am still learning, still experimenting, and still leaving half-finished sketch
     <img src="https://img.shields.io/badge/Telegram-211b24?style=flat-square&logo=telegram&logoColor=8b3a46" alt="Telegram" height="26" />
   </a>
   <a href="https://x.com/PhangchoSo60056" target="_blank" rel="noopener">
-    <img src="https://img.shields.io/badge/X-211b24?style=flat-square&logo=x&logoColor=8b3a46" alt="X" height="26" />
+    <img src="https://img.shields.io/badge/X-211b24?style=flat-square&logo=twitter&logoColor=8b3a46&logoSize=auto" alt="X" height="26" />
   </a>
   <a href="https://open.spotify.com/user/31snn46vcywdzfq3aalcghwr3uru" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/Spotify-211b24?style=flat-square&logo=spotify&logoColor=8b3a46" alt="Spotify" height="26" />
