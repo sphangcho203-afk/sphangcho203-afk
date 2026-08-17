@@ -1,0 +1,15 @@
+{
+  "query": "mutation PinItems($input: PinItemsInput!) { pinItems(input: $input) { clientMutationId } }",
+  "variables": {
+    "input": {
+      "itemIds": [
+        "R_kgDOTpOoHg",
+        "R_kgDOTThouQ",
+        "R_kgDOTTpseQ",
+        "R_kgDOTdfAzA",
+        "R_kgDOTSOzEA",
+        "R_kgDOT6fJkg"
+      ]
+    }
+  }
+}

@@ -1,9 +1,5 @@
 <div align="center">
-  <img src="./assets/soft-banner.png" width="100%" alt="A warm, rainy digital workspace with red lights and butterflies" />
-</div>
-
-<div align="center">
-  <img src="./assets/anime-girl.png" width="340" alt="An anime girl at a cozy desk by a rainy window with warm lamp light" />
+  <img src="./assets/anime-girl-916.png" width="320" alt="A calm anime girl at a cozy desk by a rainy window with warm lamp light" />
 </div>
 
 <h1 align="center">
@@ -67,6 +63,9 @@ I am still learning, still experimenting, and still leaving half-finished sketch
   </a>
   <a href="https://www.instagram.com/nerfed_irl._" target="_blank" rel="noopener">
     <img src="https://img.shields.io/badge/Instagram-211b24?style=flat-square&logo=instagram&logoColor=8b3a46" alt="Instagram" height="26" />
+  </a>
+  <a href="https://discord.com/users/npc_with_thoughts" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/Discord-211b24?style=flat-square&logo=discord&logoColor=8b3a46" alt="Discord" height="26" />
   </a>
 </p>
 
