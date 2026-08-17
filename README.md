@@ -33,6 +33,18 @@ I am still learning, still experimenting, and still leaving half-finished sketch
 
 > no perfect plan — just a desk, a few ideas, and another small thing to build.
 
+## the palette in this room
+
+<p align="left">
+  <img src="https://img.shields.io/badge/charcoal%20plum-211b24?style=flat-square&labelColor=211b24" alt="charcoal plum" />
+  <img src="https://img.shields.io/badge/muted%20burgundy-8b3a46?style=flat-square&labelColor=8b3a46" alt="muted burgundy" />
+  <img src="https://img.shields.io/badge/dusty%20rose-b65c65?style=flat-square&labelColor=b65c65" alt="dusty rose" />
+  <img src="https://img.shields.io/badge/rainy%20blue--gray-65758b?style=flat-square&labelColor=65758b" alt="rainy blue gray" />
+  <img src="https://img.shields.io/badge/warm%20amber-cb9a6b?style=flat-square&labelColor=cb9a6b" alt="warm amber" />
+</p>
+
+A little dark, a little warm, and not too polished — like the room where these projects usually begin.
+
 ## things currently on my desk
 
 | Area | What I am exploring |
