@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/anime-girl-916.gif" width="300" alt="A calm anime girl at a cozy desk by a rainy window with warm lamp light, gently moving" />
+  <img src="./assets/sticker-girl-base.png" width="250" alt="A friendly anime girl sticker waving hello, welcoming visitors" />
 </div>
 
 <h1 align="center">
