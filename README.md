@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <i>hi — i'm Songja. welcome to my little corner of the internet. take a seat by the window, stay a while.</i>
+</p>
+
+<p align="center">
   <i>building little things inside a big, slightly messy digital world.</i>
 </p>
 
