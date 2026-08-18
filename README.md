@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/anime-girl-916.png" width="320" alt="A calm anime girl at a cozy desk by a rainy window with warm lamp light" />
+  <img src="./assets/anime-girl-916.gif" width="250" alt="A calm anime girl at a cozy desk by a rainy window with warm lamp light, gently moving" />
 </div>
 
 <h1 align="center">
