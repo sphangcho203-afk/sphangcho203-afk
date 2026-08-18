@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="./assets/anime-girl-916.gif" width="250" alt="A calm anime girl at a cozy desk by a rainy window with warm lamp light, gently moving" />
+  <img src="./assets/anime-girl-916.gif" width="300" alt="A calm anime girl at a cozy desk by a rainy window with warm lamp light, gently moving" />
 </div>
 
 <h1 align="center">
-  <img src="./assets/heading-name.png" alt="Songja Phangcho" width="620" />
+  <img src="./assets/heading-name.png" alt="Songja Phangcho" width="540" />
 </h1>
 <p align="center">
   <code>sphangcho203-afk</code>
@@ -22,12 +22,12 @@
 <br/>
 
 <div align="center">
-  <img src="./assets/soft-divider.png" width="100%" alt="soft burgundy divider" />
+  <img src="./assets/soft-divider.png" width="68%" alt="soft burgundy divider" />
 </div>
 
 <br/>
 
-## <img src="./assets/heading-welcome.png" alt="hi, welcome in" width="360" style="vertical-align: middle;" />
+## <img src="./assets/heading-welcome.png" alt="hi, welcome in" width="400" style="vertical-align: middle;" />
 
 <br/>
 
@@ -149,7 +149,7 @@ A little dark, a little warm, and not too polished — like the room where these
 - leaving room for the next weird little experiment
 
 <div align="center">
-  <img src="./assets/soft-divider.png" width="100%" alt="soft burgundy divider" />
+  <img src="./assets/soft-divider.png" width="68%" alt="soft burgundy divider" />
 </div>
 
 <p align="center">
