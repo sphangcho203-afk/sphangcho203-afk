@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120">
+  <text x="450" y="78" text-anchor="middle"
+        font-family="Noto Sans" font-size="54" font-weight="bold"
+        letter-spacing="1.5">  <tspan fill="#B65C65">S</tspan>
+  <tspan fill="#2f2629">o</tspan>
+  <tspan fill="#2f2629">n</tspan>
+  <tspan fill="#8B3A46">g</tspan>
+  <tspan fill="#2f2629">j</tspan>
+  <tspan fill="#2f2629">a</tspan>
+  <tspan fill="#2f2629"> </tspan>
+  <tspan fill="#CB9A6B">P</tspan>
+  <tspan fill="#2f2629">h</tspan>
+  <tspan fill="#2f2629">a</tspan>
+  <tspan fill="#65758B">n</tspan>
+  <tspan fill="#2f2629">g</tspan>
+  <tspan fill="#8B3A46">c</tspan>
+  <tspan fill="#2f2629">h</tspan>
+  <tspan fill="#2f2629">o</tspan>
+</text>
+</svg>

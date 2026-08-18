@@ -3,9 +3,11 @@
 </div>
 
 <h1 align="center">
-  <b>Songja Phangcho</b><br/>
-  <code>sphangcho203-afk</code>
+  <img src="./assets/heading-name.png" alt="Songja Phangcho" width="620" />
 </h1>
+<p align="center">
+  <code>sphangcho203-afk</code>
+</p>
 
 <p align="center">
   <i>building little things inside a big, slightly messy digital world.</i>
@@ -17,11 +19,17 @@
   <img src="https://img.shields.io/badge/world-online-cb7b83?style=flat-square&labelColor=211b24" alt="world: online" />
 </p>
 
+<br/>
+
 <div align="center">
   <img src="./assets/soft-divider.png" width="100%" alt="soft burgundy divider" />
 </div>
 
-## hi, welcome in
+<br/>
+
+## <img src="./assets/heading-welcome.png" alt="hi, welcome in" width="360" style="vertical-align: middle;" />
+
+<br/>
 
 You found my little corner of the internet. Grab the other chair by the desk, take your time, and stay as long as you like. The tea is warm, the window is open, and the rain outside is doing most of the background noise for both of us.
 
@@ -68,6 +76,8 @@ I am still learning, still experimenting, and still leaving half-finished sketch
     <img src="https://img.shields.io/badge/Discord-211b24?style=flat-square&logo=discord&logoColor=8b3a46" alt="Discord" height="26" />
   </a>
 </p>
+
+<br/>
 
 ## the palette in this room
 

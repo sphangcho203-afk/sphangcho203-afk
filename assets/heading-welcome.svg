@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120">
+  <text x="450" y="78" text-anchor="middle"
+        font-family="Noto Serif" font-size="46" font-weight="bold"
+        letter-spacing="1.5">  <tspan fill="#B65C65">h</tspan>
+  <tspan fill="#2f2629">i</tspan>
+  <tspan fill="#2f2629">,</tspan>
+  <tspan fill="#2f2629"> </tspan>
+  <tspan fill="#2f2629">w</tspan>
+  <tspan fill="#8B3A46">e</tspan>
+  <tspan fill="#2f2629">l</tspan>
+  <tspan fill="#2f2629">c</tspan>
+  <tspan fill="#CB9A6B">o</tspan>
+  <tspan fill="#2f2629">m</tspan>
+  <tspan fill="#2f2629">e</tspan>
+  <tspan fill="#2f2629"> </tspan>
+  <tspan fill="#8B3A46">i</tspan>
+  <tspan fill="#2f2629">n</tspan>
+</text>
+</svg>
