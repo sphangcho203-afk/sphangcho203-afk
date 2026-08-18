@@ -19,6 +19,12 @@
   <img src="https://img.shields.io/badge/world-online-cb7b83?style=flat-square&labelColor=211b24" alt="world: online" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/os-linux%20%26%20android-65758b?style=flat-square&labelColor=211b24" alt="runs on: linux and android" />
+  <img src="https://img.shields.io/badge/editor-something%20quiet-cb9a6b?style=flat-square&labelColor=211b24" alt="editor: something quiet" />
+  <img src="https://img.shields.io/badge/coffee-warm%20mug-b65c65?style=flat-square&labelColor=211b24" alt="fuel: warm mug" />
+</p>
+
 <br/>
 
 <div align="center">
@@ -128,13 +134,14 @@ A little dark, a little warm, and not too polished — like the room where these
 ## little bits of activity
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sphangcho203-afk&theme=github_dark" height="190" alt="profile details" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sphangcho203-afk&theme=github_dark" height="190" alt="profile statistics" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=sphangcho203-afk&theme=dracula&custom_title=the+quiet+counter&title_color=b65c65&text_color=ede3e5&icon_color=8b3a46&bg_color=211b24" height="200" alt="profile details in burgundy" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=sphangcho203-afk&theme=dracula&custom_title=stats&title_color=b65c65&text_color=ede3e5&icon_color=8b3a46&bg_color=211b24" height="200" alt="profile statistics in burgundy" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sphangcho203-afk&theme=github_dark" height="190" alt="repository languages" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sphangcho203-afk&theme=github_dark&utcOffset=8" height="190" alt="productive time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=sphangcho203-afk&theme=dracula&custom_title=languages&title_color=b65c65&text_color=ede3e5&icon_color=8b3a46&bg_color=211b24" height="200" alt="repository languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=sphangcho203-afk&theme=dracula&custom_title=when+I+work&title_color=b65c65&text_color=ede3e5&icon_color=8b3a46&bg_color=211b24&utcOffset=5.5" height="200" alt="productive time" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=sphangcho203-afk&theme=dracula&custom_title=most+used+language&title_color=b65c65&text_color=ede3e5&icon_color=8b3a46&bg_color=211b24" height="200" alt="most used language" />
 </p>
 
 <p align="center">
