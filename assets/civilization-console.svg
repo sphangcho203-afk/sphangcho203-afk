@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="t d">
+<title id="t">Operator console</title><desc id="d">A four-module status console describing current focus, stack, doctrine, and build mode.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070a10"/><stop offset="1" stop-color="#101622"/></linearGradient>
+  <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#0a0e15"/></linearGradient>
+</defs>
+<rect width="1200" height="330" rx="26" fill="url(#bg)"/>
+<g fill="#eadcc8">
+  <text x="34" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="4" opacity=".62">LIVE CONSOLE // OPERATOR SYSTEM MAP</text>
+  <text x="934" y="38" font-family="Georgia, serif" font-size="14" font-style="italic" opacity=".52">quiet systems, loud output</text>
+</g>
+<!-- panel 1 -->
+<g transform="translate(34 62)">
+  <rect width="266" height="225" rx="18" fill="url(#panel)" stroke="#ead8bd" stroke-opacity=".23"/>
+  <text x="20" y="31" font-family="ui-monospace, monospace" font-size="11" letter-spacing="3" fill="#eadcc8" opacity=".58">01 // CURRENT SIGNAL</text>
+  <text x="20" y="77" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#f3e6d3">BUILD MODE</text>
+  <text x="20" y="107" font-family="system-ui, sans-serif" font-size="13" fill="#d5ccbf" opacity=".73">shipping systems, not personas</text>
+  <g transform="translate(20 142)" font-family="ui-monospace, monospace" font-size="10" fill="#d7c8b5" opacity=".72"><text y="0">● PRODUCT SYSTEMS</text><text y="24">● AI WORKFLOWS</text><text y="48">● AUTOMATION</text></g>
+  <circle cx="226" cy="183" r="18" fill="none" stroke="#ead8bd" stroke-opacity=".38"/><circle cx="226" cy="183" r="5" fill="#ead8bd" opacity=".78"/>
+</g>
+<!-- panel 2 -->
+<g transform="translate(322 62)">
+  <rect width="266" height="225" rx="18" fill="url(#panel)" stroke="#ead8bd" stroke-opacity=".23"/>
+  <text x="20" y="31" font-family="ui-monospace, monospace" font-size="11" letter-spacing="3" fill="#eadcc8" opacity=".58">02 // CORE STACK</text>
+  <text x="20" y="77" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#f3e6d3">SYSTEM LAYER</text>
+  <g font-family="ui-monospace, monospace" font-size="11" fill="#d8ccba" opacity=".76"><text x="20" y="116">NEXT.JS / REACT</text><text x="20" y="141">TYPESCRIPT / NODE</text><text x="20" y="166">POSTGRES / PRISMA</text><text x="20" y="191">APIS / AGENTS / MCP</text></g>
+  <path d="M195 102h49v49h-49zM207 114h25v25h-25z" fill="none" stroke="#ead8bd" stroke-opacity=".28"/>
+</g>
+<!-- panel 3 -->
+<g transform="translate(610 62)">
+  <rect width="266" height="225" rx="18" fill="url(#panel)" stroke="#ead8bd" stroke-opacity=".23"/>
+  <text x="20" y="31" font-family="ui-monospace, monospace" font-size="11" letter-spacing="3" fill="#eadcc8" opacity=".58">03 // DOCTRINE</text>
+  <text x="20" y="77" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#f3e6d3">VERIFY FIRST</text>
+  <text x="20" y="111" font-family="system-ui, sans-serif" font-size="13" fill="#d5ccbf" opacity=".73">clean architecture over patch piles</text>
+  <g font-family="ui-monospace, monospace" font-size="10" fill="#d7c8b5" opacity=".70"><text x="20" y="151">DESIGN → IMPLEMENT</text><text x="20" y="175">TEST → OBSERVE</text><text x="20" y="199">SHIP → ITERATE</text></g>
+  <path d="M212 137l24 24-24 24-24-24z" fill="none" stroke="#ead8bd" stroke-opacity=".38"/><circle cx="212" cy="161" r="4" fill="#ead8bd" opacity=".8"/>
+</g>
+<!-- panel 4 -->
+<g transform="translate(898 62)">
+  <rect width="268" height="225" rx="18" fill="url(#panel)" stroke="#ead8bd" stroke-opacity=".23"/>
+  <text x="20" y="31" font-family="ui-monospace, monospace" font-size="11" letter-spacing="3" fill="#eadcc8" opacity=".58">04 // OUTPUT</text>
+  <text x="20" y="77" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#f3e6d3">SHIP SYSTEMS</text>
+  <text x="20" y="111" font-family="system-ui, sans-serif" font-size="13" fill="#d5ccbf" opacity=".73">products that survive contact with reality</text>
+  <g transform="translate(20 145)" fill="none" stroke="#ead8bd" opacity=".5"><path d="M0 39h48l18-24 26 48 24-36 20 12h74"/><circle cx="66" cy="15" r="4" fill="#ead8bd" stroke="none"/><circle cx="116" cy="27" r="4" fill="#ead8bd" stroke="none"/></g>
+</g>
+<rect x="13" y="13" width="1174" height="304" rx="20" fill="none" stroke="#ead8bd" stroke-opacity=".20"/>
+</svg>
