@@ -1,53 +1,63 @@
 <p align="center">
-  <img src="./assets/civilization-hero.svg" width="100%" alt="Civilization Zero operator archive" />
+  <img src="./assets/engineer-world-hero.svg" width="100%" alt="Engineer World main frame" />
 </p>
 
 <div align="center">
   <sub><strong>SYSTEMS ENGINEERING · AI RUNTIMES · PRODUCT INFRASTRUCTURE · ANDROID CONTROL</strong></sub><br/>
-  <sub>An engineering archive for products, agents, runtimes, interfaces, and the control systems around them.</sub>
+  <sub>Building interfaces, agents, tools, runtimes, and the control systems that keep them real.</sub>
 </div>
 
 <br/>
 
 <p align="center">
-  <a href="#-operator-console"><strong>Operator Console</strong></a>
-  · <a href="#-selected-systems">Systems</a>
-  · <a href="#-system-blueprint">Blueprint</a>
-  · <a href="#-capability-matrix">Capability Matrix</a>
-  · <a href="#-engineering-protocol">Protocol</a>
-  · <a href="#-archive-index">Archive</a>
+  <a href="#-main_frame"><strong>MAIN_FRAME</strong></a>
+  · <a href="#-active_systems">SYSTEMS</a>
+  · <a href="#-tech_modules">TECH</a>
+  · <a href="#-system_blueprint">BLUEPRINT</a>
+  · <a href="#-engineering_protocol">PROTOCOL</a>
+  · <a href="#-archive_index">ARCHIVE</a>
 </p>
-
----
-
-## `// OPERATOR CONSOLE`
 
 <p align="center">
-  <img src="./assets/civilization-console.svg" width="100%" alt="Operator console" />
+  <code>BUILD</code> × <code>AUTOMATE</code> × <code>OBSERVE</code> × <code>VERIFY</code> × <code>SHIP</code>
 </p>
+
+<p align="center">
+  <img src="./assets/engineer-divider.svg" width="100%" alt="Engineer World HUD divider" />
+</p>
+
+## `// MAIN_FRAME`
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="58%" valign="top">
 
-### ACTIVE DOMAIN
+### ENGINEERING DIRECTIVE
 
-<kbd>PRODUCT SYSTEMS</kbd> <kbd>AGENTS</kbd> <kbd>ANDROID</kbd> <kbd>AUTOMATION</kbd>
+I build **complete operational systems**, not isolated demos.
 
-The work here is centered on **complete operational systems**, not disconnected UI demos: interfaces, APIs, persistent state, tool execution, auth boundaries, workflows, provider routing, observability, verification, recovery, and deployment.
+The interesting part starts after the interface renders: state ownership, authentication, tools, provider routing, permissions, persistence, recovery, observability, verification, and deployment.
 
-A system is not considered finished because the happy path renders. It has to survive failure, state changes, bad inputs, provider outages, and ordinary use.
+A system is not finished because its happy path works once. It is finished when the runtime can explain what happened, recover from failure, and prove the result.
+
+> **Models can propose. Deterministic systems still need to govern.**
 
 </td>
-<td width="50%" valign="top">
+<td width="42%" valign="top">
 
-### CONTROL PHILOSOPHY
+### RUNTIME STATE
 
-<kbd>CONTRACT</kbd> → <kbd>BUILD</kbd> → <kbd>OBSERVE</kbd> → <kbd>VERIFY</kbd> → <kbd>SHIP</kbd>
+```text
+PRODUCT SYSTEMS    [ ACTIVE ]
+AI / AGENT RUNTIME [ ACTIVE ]
+ANDROID CONTROL    [ ACTIVE ]
+WEB INTELLIGENCE   [ LAB    ]
+AUTOMATION         [ ACTIVE ]
+VERIFICATION       [ ALWAYS ]
+```
 
-The preferred architecture is explicit: clear ownership, typed boundaries, visible failure states, minimal hidden behavior, and proof after mutation.
-
-> **Models can propose. Systems still need to govern.**
+**Current vector**  
+`products → agents → tools → evidence → reliable execution`
 
 </td>
 </tr>
@@ -57,82 +67,87 @@ The preferred architecture is explicit: clear ownership, typed boundaries, visib
 
 | Signal | Meaning |
 |---|---|
-| `CORE` | Main product/runtime with meaningful end-to-end behavior |
+| `CORE` | End-to-end system with meaningful product/runtime behavior |
 | `ACTIVE` | Under active development or operational iteration |
-| `ALPHA` | Functional architecture with unfinished edges clearly labelled |
-| `LAB` | Focused experiment used to test a product or systems idea |
-| `PRIVATE` | Exists as a real system but is intentionally not exposed as a public repository |
+| `ALPHA` | Functional architecture with unfinished edges explicitly labelled |
+| `LAB` | Focused experiment used to test a systems idea |
+| `SEALED` | Real private system; architecture may be described without exposing source |
 
 <br/>
 
-## `// SELECTED SYSTEMS`
+## `// ACTIVE_SYSTEMS`
 
 <p align="center">
-  <img src="./assets/civilization-archives.svg" width="100%" alt="Selected project archive dossiers" />
+  <img src="./assets/engineer-project-frame.svg" width="100%" alt="Engineer World project blueprint frame" />
 </p>
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 01 — RECHARZA
-`CORE` · `PRIVATE` · COMMERCE RUNTIME
-
-A multi-game commerce system designed around the **actual transaction path** instead of storefront mockups.
-
-**System surface**
-- game and product catalogues
-- player/account validation boundaries
-- cart and checkout state
-- customer identity and authentication
-- payment-provider boundaries
-- persistent orders and private tracking
-- support and operator workflows
-- supplier / external-service integration points
-
-**Architecture direction**  
-`Next.js` · `React` · `TypeScript` · `PostgreSQL` · `Prisma` · provider APIs
-
-**Primary engineering problem:** keeping customer-facing simplicity while the backend owns pricing, identity, fulfilment, payment, and recovery state correctly.
-
-</td>
-<td width="50%" valign="top">
-
-### 02 — [NEXUS FORGE](https://github.com/sphangcho203-afk/nexus-forge)
+### 01 — [NEXUS FORGE](https://github.com/sphangcho203-afk/nexus-forge)
 `ACTIVE` · `ALPHA` · ENGINEERING AGENT RUNTIME
 
-Provider-independent engineering intelligence for the terminal. Current public release line: **`0.5.0-alpha.34`**.
-
-NEXUS treats the model as one component inside a governed mission runtime rather than giving a chatbot unrestricted shell access.
+Provider-independent engineering intelligence for the terminal, built around **governed execution** instead of unrestricted model access.
 
 **Runtime surface**
 - mission contracts and observable done conditions
 - dependency-aware work graphs
 - typed tools and permission gates
-- provider and coding-agent bridges
-- specialist capability boundaries
-- checkpoints and rollback
-- durable event/evidence state
+- provider / coding-agent bridges
+- checkpoints, rollback, and durable evidence
 - failure classification and targeted recovery
 - completion gates based on verification
 
-**Runtime split**  
-`Python core` · `Go terminal interface` · `JSONL event ledger` · `typed tool fabric`
+**Core split**  
+`Python` · `Go` · `typed tools` · `durable event/evidence state`
 
-**Target environments**  
-Android/Termux · Linux · macOS · Windows
+</td>
+<td width="50%" valign="top">
 
-> **Models propose. NEXUS governs. Tools execute. Evidence decides.**
+### 02 — [JARVIS APP](https://github.com/sphangcho203-afk/JarvisApp)
+`ACTIVE` · ANDROID ASSISTANT RUNTIME
+
+A phone-first assistant where known device operations stay deterministic and cloud reasoning is used only when reasoning is actually required.
+
+**Execution surface**
+- local action kernel
+- voice interaction
+- explicit system-control boundaries
+- typed results returned to the HUD
+- device telemetry and actions
+- provider failover
+- protected provider configuration
+
+**Core split**  
+`Kotlin` · `Android APIs` · `local execution` · `provider mesh`
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 03 — [NOVA COMMAND](https://github.com/sphangcho203-afk/nova-command)
+### 03 — [WEB SCRAPPING CLI](https://github.com/sphangcho203-afk/Web-Scrapping-CLI)
+`LAB` · WEB INTELLIGENCE TOOLING
+
+A public web-intelligence CLI for search, fetch, extraction, parsing, and analysis workflows while keeping access boundaries, source provenance, and failure states explicit.
+
+**Direction**
+- normalized search / fetch routes
+- structured extraction
+- content analysis pipelines
+- reusable agent-facing tools
+- observable request / result boundaries
+
+**Design problem:** make web research programmable without turning the runtime into an opaque pile of scrapers.
+
+</td>
+<td width="50%" valign="top">
+
+### 04 — [NOVA COMMAND](https://github.com/sphangcho203-afk/nova-command)
 `LAB` · MISSION CONTROL
 
-A command-oriented dashboard for turning scattered projects, tasks, ideas, and daily execution into one operational surface.
+A command-oriented surface for turning scattered projects, tasks, ideas, and execution state into one operational view.
 
 **Focus**
 - project state at a glance
@@ -141,97 +156,30 @@ A command-oriented dashboard for turning scattered projects, tasks, ideas, and d
 - command-center information hierarchy
 - reducing switching cost between planning and doing
 
-**Design problem:** show enough state to make decisions without turning the dashboard into another thing that needs managing.
-
-</td>
-<td width="50%" valign="top">
-
-### 04 — [JARVIS APP](https://github.com/sphangcho203-afk/JarvisApp)
-`ACTIVE` · ANDROID ASSISTANT RUNTIME
-
-A phone-first Kotlin assistant with a deterministic local action kernel, voice interaction, system-control boundaries, memory, timers, telemetry, and a health-aware provider mesh.
-
-Current public line: **Phase 9.2B — System Control Bridge**.
-
-**Execution surface**
-- local command handling before cloud reasoning
-- foreground voice interaction
-- deterministic app/device actions
-- typed result states returned to the HUD
-- Android Quick Settings control through an explicit user-enabled bridge
-- app discovery and typo-tolerant matching
-- battery/network/media/brightness/rotation telemetry and actions
-- bounded provider failover
-- Android Keystore protected provider configuration
-
-**Architecture direction**  
-`Kotlin` · `Android APIs` · `SystemUI bridge` · `local execution kernel` · `provider mesh`
-
-**Boundary:** protected device actions stay explicit and constrained instead of being delegated to free-form model output.
+**Design problem:** expose enough state to make decisions without making the dashboard itself another system to babysit.
 
 </td>
 </tr>
 </table>
 
-<br/>
+### SEALED CORE SYSTEMS
 
-## `// SYSTEM BLUEPRINT`
+| System | Classification | Primary engineering problem |
+|---|---|---|
+| **Recharza** | `CORE / SEALED` | commerce state, identity, checkout, payment boundaries, fulfilment, recovery |
+| **AI Chatbot Runtime** | `ACTIVE / SEALED` | owner-controlled agent UI, provider routing, tools, approvals, auth and model orchestration |
+
+<br/>
 
 <p align="center">
-  <img src="./assets/civilization-blueprint.svg" width="100%" alt="Systems architecture blueprint" />
+  <img src="./assets/engineer-divider.svg" width="100%" alt="Engineer World HUD divider" />
 </p>
 
-The projects differ in product surface, but the architecture repeatedly converges on the same layers:
+## `// TECH_MODULES`
 
-```text
-REQUEST
-   │
-   ▼
-PRODUCT SURFACE
-   │
-   ▼
-EXECUTION / RUNTIME ──────────────┐
-   │                              │
-   ├────► STATE + PERSISTENCE     │
-   │                              │
-   ├────► TOOLS / PROVIDERS       │
-   │                              │
-   └────► PERMISSIONS / POLICY    │
-                                  │
-OBSERVATION ◄─────────────────────┘
-   │
-   ▼
-VERIFICATION
-   │
-   ├──── success ───► REPORT / SHIP
-   │
-   └──── failure ───► RECOVER / REPLAN
-```
-
-### WHY THIS SHAPE KEEPS REAPPEARING
-
-A polished interface can hide complexity, but it cannot delete it. Authentication, tool permissions, external providers, persistent state, retries, money movement, device control, and AI output all create failure modes. The control plane exists so those failures become **states the system can explain and recover from**, not mystery behavior.
-
-<br/>
-
-## `// CAPABILITY MATRIX`
-
-| Capability | Recharza | NEXUS FORGE | Nova Command | Jarvis |
-|---|:---:|:---:|:---:|:---:|
-| Product interface | ● | ● | ● | ● |
-| Persistent state | ● | ● | ● | ● |
-| External APIs/providers | ● | ● | ◐ | ● |
-| Tool/action execution | ◐ | ● | ◐ | ● |
-| Permission boundaries | ● | ● | ◐ | ● |
-| Recovery/failure states | ● | ● | ◐ | ● |
-| Verification/evidence | ● | ● | ◐ | ● |
-| Agent/model orchestration | ◐ | ● | ◐ | ● |
-| Device-level integration | — | ◐ | — | ● |
-| Commerce/order lifecycle | ● | — | — | — |
-
-<sub>● = first-class system concern · ◐ = partial / supporting concern · — = outside the project scope</sub>
-
-### ENGINEERING SURFACE
+<p align="center">
+  <img src="./assets/engineer-stack.svg" width="100%" alt="Engineer World technology modules" />
+</p>
 
 <table>
 <tr>
@@ -240,7 +188,7 @@ A polished interface can hide complexity, but it cannot delete it. Authenticatio
 <sub>
 React<br/>
 Next.js<br/>
-Android/Kotlin UI<br/>
+Android / Kotlin UI<br/>
 terminal UI<br/>
 information architecture
 </sub>
@@ -251,7 +199,7 @@ information architecture
 TypeScript / Node<br/>
 Python<br/>
 Go<br/>
-Android APIs<br/>
+Kotlin<br/>
 workers + command execution
 </sub>
 </td>
@@ -278,22 +226,62 @@ recovery + auditability
 </tr>
 </table>
 
+### SYSTEM LOADOUT
+
+`TypeScript` · `Python` · `Go` · `Kotlin` · `React` · `Next.js` · `Node.js` · `PostgreSQL` · `Prisma` · `Android APIs` · `Vercel` · `GitHub Actions`
+
 <br/>
 
-## `// ENGINEERING PROTOCOL`
+## `// SYSTEM_BLUEPRINT`
+
+The products change. The control shape keeps returning.
+
+```text
+                         ┌─────────────────────┐
+USER / OPERATOR ───────► │   PRODUCT SURFACE   │
+                         └──────────┬──────────┘
+                                    │
+                                    ▼
+                         ┌─────────────────────┐
+                         │ EXECUTION / RUNTIME │
+                         └──┬──────┬──────┬────┘
+                            │      │      │
+                 ┌──────────┘      │      └──────────┐
+                 ▼                 ▼                 ▼
+        ┌────────────────┐ ┌──────────────┐ ┌────────────────┐
+        │ STATE / MEMORY │ │ TOOLS / APIs │ │ POLICY / AUTH  │
+        └────────┬───────┘ └──────┬───────┘ └───────┬────────┘
+                 └──────────────┬──┴─────────────────┘
+                                ▼
+                     ┌─────────────────────┐
+                     │ OBSERVE + VERIFY    │
+                     └──────────┬──────────┘
+                                │
+                 ┌──────────────┴──────────────┐
+                 ▼                             ▼
+          SUCCESS / SHIP                FAILURE / RECOVER
+```
+
+### WHY THIS SHAPE
+
+Authentication, external providers, persistent state, payments, device control, tool execution, and AI output all create failure modes. The control plane turns those failures into **explicit states** instead of mystery behavior.
+
+<br/>
+
+## `// ENGINEERING_PROTOCOL`
 
 ```text
 ┌─ BUILD CONTRACT ─────────────────────────────────────────────────────────┐
 │                                                                         │
-│   01  DEFINE       what observable state counts as done                 │
-│   02  MAP          dependencies, state, boundaries, external systems    │
-│   03  IMPLEMENT    smallest coherent change that satisfies the contract │
-│   04  OBSERVE      inspect actual runtime behavior                      │
-│   05  VERIFY       prove the change against fresh evidence              │
-│   06  RECOVER      keep failure diagnosable and reversible              │
-│   07  SHIP         only after the system survives the real path         │
+│  01  DEFINE     observable state that counts as done                    │
+│  02  MAP        dependencies, ownership, boundaries, failure modes      │
+│  03  BUILD      smallest coherent end-to-end change                     │
+│  04  OBSERVE    inspect actual runtime behavior                         │
+│  05  VERIFY     prove the change against fresh evidence                 │
+│  06  RECOVER    keep failure diagnosable and reversible                │
+│  07  SHIP       only after the real path survives                       │
 │                                                                         │
-└─────────────────────────────────────────────────────────────── v1.0 ───┘
+└─────────────────────────────────────────────────────────────── SYS.OK ─┘
 ```
 
 ### NON-NEGOTIABLES
@@ -301,103 +289,38 @@ recovery + auditability
 | Domain | Standard |
 |---|---|
 | Product | The real user path matters more than isolated screens |
-| Frontend | Composition and hierarchy before component accumulation |
+| Frontend | Hierarchy and flow before component accumulation |
 | Backend | State ownership must be explicit |
 | AI | Models reason; deterministic code owns deterministic actions |
-| Tooling | Capability is bounded by permissions and scope |
+| Tools | Capability is bounded by permissions and scope |
 | Providers | Failure is expected; routing and recovery are product behavior |
-| Security | Fail closed where ambiguity could become privilege |
+| Security | Ambiguous privilege should fail closed |
 | Verification | Confidence is not evidence |
-| Operations | Diagnostics should reveal enough to recover, not leak secrets |
 | Shipping | A smaller verified system beats a larger imaginary one |
 
-### FAILURE MODEL
-
-Instead of treating errors as exceptional side quests, the systems are designed around a small set of repeatable questions:
-
-1. **What state were we in?**
-2. **What operation was attempted?**
-3. **What boundary owned it?**
-4. **What evidence says it failed or succeeded?**
-5. **Can the operation be retried safely?**
-6. **Can the previous good state be restored?**
-7. **What should the operator/user see next?**
-
-That model applies surprisingly well to an AI agent mission, a payment flow, an Android device action, or a deployment.
-
 <br/>
 
-## `// SYSTEM PATTERNS`
+## `// ARCHIVE_INDEX`
 
-<details open>
-<summary><strong>01 / GOVERNED AI</strong></summary>
-<br/>
-
-```text
-USER INTENT
-   ↓
-CONTRACT
-   ↓
-MODEL / PLANNER
-   ↓
-CAPABILITY CHECK
-   ↓
-TOOL / ACTION
-   ↓
-OBSERVED RESULT
-   ↓
-VERIFICATION
-```
-
-The model can decide what might be useful. The runtime still owns whether the action is allowed, how it executes, what gets persisted, and what proves completion.
-
-</details>
-
-<details>
-<summary><strong>02 / STATEFUL PRODUCT FLOW</strong></summary>
-<br/>
-
-```text
-INPUT → VALIDATE → PRICE/PLAN → COMMIT STATE → EXTERNAL ACTION → VERIFY → RECEIPT
-                     │                              │
-                     └──────── RECOVERY ◄───────────┘
-```
-
-Useful for checkout, orders, account changes, provider calls, and any operation where "the request was sent" is not the same as "the operation completed correctly."
-
-</details>
-
-<details>
-<summary><strong>03 / LOCAL-FIRST DEVICE CONTROL</strong></summary>
-<br/>
-
-```text
-COMMAND
-  ├─ deterministic local action available? ──► execute locally ──► verify
-  │
-  └─ requires reasoning? ──► provider mesh ──► structured result
-```
-
-Known device actions should not make a round trip through a language model when Android can perform and verify them directly.
-
-</details>
-
-<br/>
-
-## `// ARCHIVE INDEX`
-
-| Archive | Classification | Primary problem | Public surface |
-|---|---|---|---|
-| **Recharza** | `CORE / PRIVATE` | reliable commerce state and fulfilment boundaries | intentionally restricted |
-| **NEXUS FORGE** | `ACTIVE / ALPHA` | governed autonomous engineering runtime | [repository](https://github.com/sphangcho203-afk/nexus-forge) |
-| **Nova Command** | `LAB` | operational project/task visibility | [repository](https://github.com/sphangcho203-afk/nova-command) |
-| **Jarvis App** | `ACTIVE` | deterministic phone-first assistant execution | [repository](https://github.com/sphangcho203-afk/JarvisApp) |
+| Archive | Signal | Surface |
+|---|---|---|
+| **NEXUS FORGE** | `ACTIVE / ALPHA` | [repository](https://github.com/sphangcho203-afk/nexus-forge) |
+| **Jarvis App** | `ACTIVE` | [repository](https://github.com/sphangcho203-afk/JarvisApp) |
+| **Web Scrapping CLI** | `LAB` | [repository](https://github.com/sphangcho203-afk/Web-Scrapping-CLI) |
+| **Nova Command** | `LAB` | [repository](https://github.com/sphangcho203-afk/nova-command) |
+| **Socializing** | `PUBLIC` | [repository](https://github.com/sphangcho203-afk/Socializing-) |
+| **Recharza** | `CORE / SEALED` | private runtime |
+| **AI Chatbot Runtime** | `ACTIVE / SEALED` | private runtime |
 
 ### CURRENT THEMES
 
-`governed agents` · `tool execution` · `evidence-backed completion` · `product infrastructure` · `Android control` · `stateful workflows` · `provider resilience` · `designed interfaces`
+`governed agents` · `tool execution` · `evidence-backed completion` · `product infrastructure` · `Android control` · `stateful workflows` · `provider resilience` · `web intelligence` · `designed interfaces`
 
 <br/>
+
+<p align="center">
+  <img src="./assets/engineer-divider.svg" width="100%" alt="Engineer World HUD divider" />
+</p>
 
 ## `// TRANSMISSION`
 
@@ -409,7 +332,7 @@ Known device actions should not make a round trip through a language model when 
 > Completion should be provable.
 
 <p align="center">
-  <img src="./assets/civilization-footer.svg" width="100%" alt="Civilization Zero closing signal" />
+  <img src="./assets/engineer-footer.svg" width="100%" alt="Engineer World system status" />
 </p>
 
 <!--
