@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" shape-rendering="crispEdges">
+<rect width="1600" height="720" fill="#0D1117"/>
+<g fill="#081821" stroke="#00F0FF" stroke-width="3">
+<path d="M70 90H420L450 58H1150L1180 90H1530V640H70Z"/>
+<rect x="150" y="155" width="1300" height="400" fill="#061119" stroke="#176A79"/>
+</g>
+<g stroke="#123442" stroke-width="1" opacity=".7"><path d="M150 205H1450M150 255H1450M150 305H1450M150 355H1450M150 405H1450M150 455H1450M150 505H1450"/><path d="M250 155V555M350 155V555M450 155V555M550 155V555M650 155V555M750 155V555M850 155V555M950 155V555M1050 155V555M1150 155V555M1250 155V555M1350 155V555"/></g>
+<g font-family="monospace" font-weight="700"><text x="110" y="125" font-size="34" fill="#EAFBFF">PROJECT BLUEPRINT</text><text x="1470" y="125" font-size="16" text-anchor="end" fill="#00F0FF">PROJECT.MODEL//v1</text></g>
+<g font-family="monospace" font-size="20" font-weight="700">
+<rect x="920" y="68" width="200" height="62" fill="#351016" stroke="#E63946" stroke-width="3"/><text x="1020" y="108" text-anchor="middle" fill="#FF7B83">▶ RUN.EXE</text>
+<rect x="1140" y="68" width="200" height="62" fill="#3A3108" stroke="#FFD700" stroke-width="3"/><text x="1240" y="108" text-anchor="middle" fill="#FFD700">◇ DEPLOY</text>
+</g>
+<g transform="translate(800 355)" fill="none" stroke="#00F0FF" stroke-width="3">
+<path d="M-220-70L0-170L220-70L0 30Z"/><path d="M-220-70V80L0 180V30M220-70V80L0 180"/>
+<path d="M-140-35L0-100L140-35L0 30Z" opacity=".7"/><circle r="66"/><circle r="35" stroke="#FFD700"/><path d="M-300 0H-120M120 0H300M0-210V-105M0 105V210"/>
+</g>
+<g font-family="monospace" font-size="15" fill="#00F0FF"><text x="170" y="595">&gt; BUILD</text><text x="260" y="595">&gt; TEST</text><text x="350" y="595">&gt; OBSERVE</text><text x="470" y="595">&gt; VERIFY</text><text x="570" y="595">&gt; SHIP</text><text x="1430" y="595" text-anchor="end" fill="#FFD700">DEPLOY READY</text></g>
+<g fill="#E63946"><rect x="92" y="90" width="12" height="12"/><rect x="1496" y="90" width="12" height="12"/></g><g fill="#FFD700"><rect x="110" y="90" width="12" height="12"/><rect x="1478" y="90" width="12" height="12"/></g>
+</svg>
