@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="170" viewBox="0 0 1600 170" shape-rendering="crispEdges">
+<rect width="1600" height="170" fill="#0D1117"/><path d="M30 30H1570V140H30Z" fill="#07131B" stroke="#00F0FF" stroke-width="3"/>
+<g font-family="monospace"><text x="70" y="72" fill="#00F0FF" font-size="18">J.A.R.V.I.S.-CLASS // ENGINEER WORLD</text><text x="800" y="100" text-anchor="middle" fill="#EAFBFF" font-size="31" font-weight="700">SYSTEM STATUS: 100% OPERATIONAL</text></g>
+<g transform="translate(1320 85)" stroke="#00F0FF" fill="none" stroke-width="4"><path d="M0 0H45L60-25L78 28L98-15L118 0H210"/></g>
+<g fill="#00F0FF"><rect x="70" y="114" width="22" height="10"/><rect x="100" y="114" width="22" height="10"/><rect x="130" y="114" width="22" height="10"/><rect x="160" y="114" width="22" height="10"/></g>
+<circle cx="198" cy="119" r="6" fill="#FFD700"/><circle cx="218" cy="119" r="6" fill="#E63946"/>
+</svg>
