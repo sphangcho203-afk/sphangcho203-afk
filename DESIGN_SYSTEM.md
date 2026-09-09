@@ -1,136 +1,110 @@
-# CIVILIZATION ZERO // VISUAL SYSTEM
+# ENGINEER WORLD // VISUAL SYSTEM
 
-This repository uses a deliberate visual language instead of a collection of unrelated banners. The goal is to make technical content feel like one coherent archive while remaining readable inside GitHub's Markdown renderer.
+This profile uses one deliberate visual language: **retro 16-bit engineering UI fused with futuristic HUD instrumentation**. The visual layer can be cinematic; the technical claims underneath must stay concrete, selectable, and inspectable.
 
 ---
 
 ## 01 / DESIGN INTENT
 
-**Tone:** classified engineering archive, celestial infrastructure, restrained anime-civilization influence.
+**Tone:** pixel-engineer mainframe, advanced workshop, governed runtime, retro arcade instrumentation.
 
 The system should feel:
 
 - authored rather than templated;
 - technical without becoming sterile;
-- cinematic without burying the information;
-- dense without becoming noisy;
-- dark without collapsing into pure black;
-- ornamental only where ornament reinforces hierarchy.
+- playful without becoming childish;
+- cinematic without burying the engineering;
+- dense with information, not decorative noise;
+- consistent from hero to footer.
 
-It should not feel like:
+It should not become:
 
-- a generic neon developer profile;
-- a badge wall;
-- a cyberpunk dashboard assembled from random cards;
-- a wallpaper with text underneath;
+- a generic neon badge wall;
+- random cyberpunk cards with no hierarchy;
+- a wallpaper followed by unrelated Markdown;
+- an imitation of a film UI frame-for-frame;
 - a personal social-media landing page.
 
 ---
 
-## 02 / COLOR LANGUAGE
+## 02 / CORE PALETTE
 
-| Token | Intent | Approximate value |
+| Token | Value | Role |
 |---|---|---|
-| `VOID` | deepest background | `#070A10` |
-| `OBSIDIAN` | secondary surface | `#101725` |
-| `ASH` | quiet structural surface | `#181D28` |
-| `IVORY` | primary warm text / line | `#F2E4D0` |
-| `BONE` | subdued text | `#B8B5C0` |
-| `DUSK` | muted violet structural accent | `#6D5A78` |
-| `EMBER` | warm signal highlight | `#F0D8B8` |
+| `OBSIDIAN` | `#0D1117` | primary background |
+| `REACTOR_CYAN` | `#00F0FF` | primary signal / structure |
+| `TITANIUM_GOLD` | `#FFD700` | active engineering accent |
+| `STARK_CRIMSON` | `#E63946` | warning / execution accent |
+| `ICE_TEXT` | `#EAFBFF` | primary light text |
+| `STEEL_BLUE` | `#16394B` | low-priority grid / structure |
 
-The palette avoids saturated purple as a dominant brand color. Violet appears only as atmospheric depth.
+The palette should stay controlled. Cyan owns the interface. Gold marks active capability. Crimson marks execution or warning. Obsidian keeps the profile grounded.
 
 ---
 
-## 03 / TYPOGRAPHIC ROLES
+## 03 / PIXEL RULES
 
-GitHub-hosted SVGs cannot rely on external web fonts, so the visual system uses strong role separation rather than fragile font dependencies.
+1. Use crisp geometric edges and explicit grid alignment.
+2. Avoid soft anti-aliased ornament when a hard pixel edge works.
+3. Use glow as a signal hierarchy tool, not as fog.
+4. Keep micro-HUD text short and decorative; long explanations belong in Markdown.
+5. Symmetry is useful for system status and divider assets; project content can break symmetry when information requires it.
+
+SVG assets use `shape-rendering="crispEdges"` where possible so the system stays sharp at GitHub display sizes.
+
+---
+
+## 04 / TYPOGRAPHIC ROLES
 
 ### DISPLAY
 
-Used for archive titles and large system names.
+Used for the hero and major system labels.
 
 - uppercase;
-- wide tracking;
-- high contrast;
-- short phrases only.
+- short phrases;
+- wide spacing;
+- high contrast.
 
 ### TERMINAL
 
-Used for metadata, coordinates, release labels, and system states.
+Used for runtime state, labels, status codes, and technical metadata.
 
-Preferred stack:
+Preferred fallback:
 
 ```text
-ui-monospace, SFMono-Regular, Menlo, Consolas, monospace
+monospace / ui-monospace / SFMono-Regular / Menlo / Consolas
 ```
 
 ### DOCUMENT
 
-Native GitHub Markdown typography is deliberately kept for long technical explanation. This prevents the profile from becoming an unreadable poster.
+Native GitHub Markdown remains the primary layer for long-form technical explanation. The profile should still make sense if decorative imagery fails to load.
 
 ---
 
-## 04 / VISUAL GRAMMAR
+## 05 / VISUAL GRAMMAR
 
-### Frames
+### REACTOR
 
-Large modules use restrained rounded frames with low-opacity warm strokes.
+The reactor symbol represents the active system core: energy, orchestration, and runtime state.
 
-```text
-┌──────────────────────────────────────────────┐
-│  metadata                                    │
-│                                              │
-│  primary information                        │
-│                                              │
-│                                  signal      │
-└──────────────────────────────────────────────┘
-```
+### FRAME
 
-### Rings
+Mechanical HUD frames represent a bounded capability or project surface.
 
-Celestial rings represent control, coordination, or a system boundary. They are structural symbols, not decoration pasted everywhere.
+### GRID
 
-### Lines
+Grids imply measurable structure, diagrams, and execution space. They should never overpower the actual content.
 
-Directional lines should imply one of three meanings:
+### SIGNAL COLORS
 
-- data/control flow;
-- hierarchy;
-- measured alignment.
+- cyan = available / informational
+- gold = active / important
+- crimson = execution / warning
+- white = primary readable text
 
-### Signal points
+### DIVIDERS
 
-Small warm dots indicate an active or observed system state.
-
-### Ruins / skyline
-
-The civilization imagery belongs primarily in the hero and major archive surfaces. Technical modules should become progressively more diagrammatic as the reader moves down the page.
-
----
-
-## 05 / CONTENT HIERARCHY
-
-The profile follows a deliberate descent from atmosphere into proof.
-
-```text
-CINEMATIC IDENTITY
-      ↓
-OPERATOR CONSOLE
-      ↓
-PROJECT DOSSIERS
-      ↓
-SYSTEM BLUEPRINT
-      ↓
-CAPABILITY MATRIX
-      ↓
-ENGINEERING PROTOCOL
-      ↓
-DEEP ARCHIVE DOCUMENTATION
-```
-
-This keeps the opening memorable while ensuring the lower half rewards technical inspection.
+Section dividers create rhythm between major modules. They should be thin enough to separate sections without becoming another hero banner.
 
 ---
 
@@ -138,30 +112,52 @@ This keeps the opening memorable while ensuring the lower half rewards technical
 
 | Asset | Role |
 |---|---|
-| `assets/civilization-hero.svg` | primary cinematic identity |
-| `assets/civilization-console.svg` | operating-state overview |
-| `assets/civilization-archives.svg` | selected-system visual index |
-| `assets/civilization-blueprint.svg` | cross-project architecture diagram |
-| `assets/civilization-footer.svg` | closing transmission / visual endpoint |
+| `assets/engineer-world-hero.svg` | main identity / workshop mainframe |
+| `assets/engineer-divider.svg` | section rhythm / reactor link |
+| `assets/engineer-project-frame.svg` | project showcase / blueprint surface |
+| `assets/engineer-stack.svg` | technology module inventory |
+| `assets/engineer-footer.svg` | closing system-status transmission |
 
-Older experimental assets may remain in the repository as design history, but the files above form the current profile system.
-
----
-
-## 07 / README COMPOSITION RULES
-
-1. **Never stack large images without real text between them.**
-2. **Every visual module needs an informational purpose.**
-3. **Technical claims belong in selectable Markdown text, not only inside images.**
-4. **Tables are used for comparison, not as generic card containers everywhere.**
-5. **Badges are secondary metadata, never the visual identity.**
-6. **The lower the reader goes, the more specific the content should become.**
-7. **Decorative language must not obscure actual project status.**
-8. **Private systems may be described at architecture level without exposing private source or operational secrets.**
+Older assets may remain as design history, but the files above define the active profile system.
 
 ---
 
-## 08 / WRITING VOICE
+## 07 / README HIERARCHY
+
+```text
+ENGINEER WORLD HERO
+        ↓
+MAIN_FRAME / DIRECTIVE
+        ↓
+ACTIVE SYSTEMS
+        ↓
+TECH MODULES
+        ↓
+SYSTEM BLUEPRINT
+        ↓
+ENGINEERING PROTOCOL
+        ↓
+ARCHIVE / TRANSMISSION
+```
+
+The descent is intentional: atmosphere first, then proof.
+
+---
+
+## 08 / CONTENT RULES
+
+1. Major visuals must support a real informational role.
+2. Technical claims must remain selectable Markdown, not image-only text.
+3. Public and private systems must be classified accurately.
+4. Private systems may be described architecturally without exposing secrets or private source.
+5. Project descriptions should state the actual engineering problem, not marketing language.
+6. Status labels such as `ACTIVE`, `ALPHA`, `LAB`, and `SEALED` must stay truthful.
+7. The profile must avoid personal-identifying information unrelated to the engineering work.
+8. A decorative UI element should be removed if it weakens hierarchy or readability.
+
+---
+
+## 09 / WRITING VOICE
 
 Preferred:
 
@@ -169,31 +165,12 @@ Preferred:
 
 Avoid:
 
-> Revolutionary AI-powered next-generation super assistant experience.
+> Revolutionary next-generation AI experience powered by cutting-edge innovation.
 
-Preferred writing is concrete, architectural, and testable. The visual world can be dramatic; the engineering claims should remain ordinary and inspectable.
-
----
-
-## 09 / POLISH CHECKLIST
-
-Before changing the profile, verify:
-
-- [ ] the hero still has a clear focal point;
-- [ ] there is no giant dead zone between modules;
-- [ ] repeated card patterns have not taken over the page;
-- [ ] long text remains native/selectable Markdown;
-- [ ] every project description contains a real engineering problem;
-- [ ] architecture diagrams reflect the written model;
-- [ ] status labels are truthful;
-- [ ] links point only to intentionally public surfaces;
-- [ ] the page works even if decorative imagery fails to load;
-- [ ] new visuals match the existing frame, spacing, and signal language.
+The visual system can be dramatic. The writing should remain precise.
 
 ---
 
 ## 10 / FINAL RULE
 
-**Atmosphere earns attention. Specificity earns trust.**
-
-The repository should always contain both.
+**The interface earns attention. The architecture earns trust. The evidence earns the ship.**
