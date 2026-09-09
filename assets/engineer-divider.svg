@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="110" viewBox="0 0 1600 110" shape-rendering="crispEdges">
+<rect width="1600" height="110" fill="#0D1117"/>
+<g stroke="#00F0FF" fill="none">
+<path stroke-width="5" d="M38 55H650M950 55H1562"/>
+<path stroke-width="2" d="M90 43H620M980 43H1510M90 67H620M980 67H1510" opacity=".35"/>
+<circle cx="800" cy="55" r="36" fill="#081923" stroke-width="4"/><circle cx="800" cy="55" r="23" stroke-width="8" stroke-dasharray="8 6"/><circle cx="800" cy="55" r="9" fill="#DDFEFF" stroke-width="3"/>
+</g>
+<g fill="#FFD700"><path d="M700 38l13 24h-26z"/><path d="M900 38l13 24h-26z"/></g>
+<g font-family="monospace" font-size="13" fill="#00F0FF"><text x="615" y="28" text-anchor="end">ARC//LINK</text><text x="985" y="28">ENGINEER//WORLD</text><text x="52" y="36">01</text><text x="1510" y="36">SYS.OK</text></g>
+</svg>
