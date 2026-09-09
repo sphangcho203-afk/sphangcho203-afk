@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#071019"/><stop offset="1" stop-color="#0D1117"/></linearGradient>
+    <linearGradient id="cyan" x1="0" x2="1"><stop stop-color="#00A6B3"/><stop offset=".5" stop-color="#00F0FF"/><stop offset="1" stop-color="#008A96"/></linearGradient>
+  </defs>
+  <rect width="1600" height="500" fill="url(#bg)"/>
+  <g fill="none" stroke="#133244" stroke-width="2" opacity=".65">
+    <path d="M0 420H1600M0 390H1600M0 360H1600M0 330H1600"/>
+    <path d="M80 0V500M160 0V500M240 0V500M320 0V500M1280 0V500M1360 0V500M1440 0V500M1520 0V500"/>
+  </g>
+  <g stroke="#00F0FF" fill="none">
+    <path stroke-width="6" d="M28 24H410L430 44H1170L1190 24H1572V140"/>
+    <path stroke-width="2" d="M28 140V24M1572 24V140M66 456H1534"/>
+  </g>
+  <g font-family="monospace" font-weight="700">
+    <text x="800" y="90" text-anchor="middle" font-size="48" fill="#EAFBFF" letter-spacing="4">STARK_ENGINEER//MAIN_FRAME</text>
+    <text x="800" y="126" text-anchor="middle" font-size="18" fill="#00F0FF" letter-spacing="5">IDEAS  &gt;  CIRCUITS  &gt;  CODE  &gt;  REALITY</text>
+    <text x="62" y="78" font-size="16" fill="#00F0FF">&gt; BUILD</text>
+    <text x="62" y="102" font-size="16" fill="#00F0FF">&gt; LEARN</text>
+    <text x="62" y="126" font-size="16" fill="#00F0FF">&gt; AUTOMATE</text>
+    <text x="62" y="150" font-size="16" fill="#00F0FF">&gt; IMPROVE</text>
+    <text x="1340" y="78" font-size="15" fill="#E63946">SYSTEMS: ONLINE</text>
+    <text x="1340" y="102" font-size="15" fill="#FFD700">INNOVATION: ACTIVE</text>
+    <text x="1340" y="126" font-size="15" fill="#00F0FF">RUNTIME: VERIFIED</text>
+  </g>
+  <g fill="#101D28" stroke="#16394B" stroke-width="2">
+    <path d="M0 330H90V275H128V330H176V240H220V330H260V294H306V330H360V250H402V330H448V284H492V330H540V230H584V330H634V270H680V330H920V274H966V330H1010V245H1052V330H1102V288H1148V330H1190V220H1236V330H1288V264H1330V330H1382V238H1430V330H1472V276H1518V330H1600V500H0Z"/>
+  </g>
+  <g fill="#FFD700" opacity=".55">
+    <rect x="188" y="270" width="5" height="5"/><rect x="205" y="288" width="5" height="5"/><rect x="375" y="280" width="5" height="5"/><rect x="557" y="258" width="5" height="5"/><rect x="1022" y="270" width="5" height="5"/><rect x="1204" y="246" width="5" height="5"/><rect x="1395" y="266" width="5" height="5"/>
+  </g>
+  <g>
+    <rect x="470" y="340" width="660" height="24" fill="#16232D" stroke="#00F0FF" stroke-width="3"/>
+    <rect x="530" y="364" width="540" height="70" fill="#111820" stroke="#263A46" stroke-width="3"/>
+    <rect x="575" y="390" width="120" height="12" fill="#FFD700"/><rect x="905" y="390" width="120" height="12" fill="#E63946"/>
+  </g>
+  <g transform="translate(800 282)">
+    <circle r="92" fill="#081923" stroke="#00F0FF" stroke-width="4"/>
+    <circle r="68" fill="none" stroke="#1D6A7A" stroke-width="18" stroke-dasharray="18 10"/>
+    <circle r="46" fill="#072A34" stroke="#00F0FF" stroke-width="10"/>
+    <circle r="26" fill="#DDFEFF" stroke="#00F0FF" stroke-width="6"/>
+    <circle r="8" fill="#FFFFFF"/>
+    <path d="M0-118V-94M0 94V118M-118 0H-94M94 0H118" stroke="#00F0FF" stroke-width="6"/>
+  </g>
+  <g fill="#081821" stroke="#00F0FF" stroke-width="2" font-family="monospace">
+    <rect x="270" y="176" width="300" height="130"/><rect x="1030" y="176" width="300" height="130"/>
+    <text x="292" y="204" fill="#00F0FF" font-size="16">ARC_REACTOR.RUNTIME</text>
+    <text x="292" y="232" fill="#EAFBFF" font-size="14">POWER      [████████] 100%</text>
+    <text x="292" y="254" fill="#EAFBFF" font-size="14">STABILITY  [███████ ]  99%</text>
+    <text x="292" y="276" fill="#FFD700" font-size="14">CREATIVITY [∞]</text>
+    <text x="1052" y="204" fill="#00F0FF" font-size="16">ENGINEER.WORLD</text>
+    <text x="1052" y="232" fill="#EAFBFF" font-size="14">SYSTEMS  // PRODUCTS</text>
+    <text x="1052" y="254" fill="#EAFBFF" font-size="14">AGENTS   // ANDROID</text>
+    <text x="1052" y="276" fill="#FFD700" font-size="14">BUILD &gt; VERIFY &gt; SHIP</text>
+  </g>
+  <text x="800" y="477" text-anchor="middle" font-family="monospace" font-size="17" fill="#00F0FF" letter-spacing="4">PIXEL ENGINEERS × REAL SYSTEMS × A BRIGHTER TOMORROW</text>
+</svg>
