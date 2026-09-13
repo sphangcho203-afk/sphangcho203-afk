@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Runtime architecture map</title>
+  <desc id="desc">A detailed architecture diagram connecting interface, runtime, state, tools, policy, observability, verification, and recovery.</desc>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090d13"/><stop offset="1" stop-color="#0d141d"/></linearGradient>
+    <linearGradient id="panel2" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#111b27"/><stop offset="1" stop-color="#0b1118"/></linearGradient>
+    <pattern id="grid2" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#173140" stroke-width="1" opacity="0.3"/></pattern>
+    <filter id="glow2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#46dce8"/></marker>
+  </defs>
+  <rect width="1200" height="430" rx="22" fill="url(#bg2)"/>
+  <rect width="1200" height="430" rx="22" fill="url(#grid2)"/>
+  <rect x="1" y="1" width="1198" height="428" rx="21" fill="none" stroke="#1d2f3d"/>
+
+  <text x="40" y="43" fill="#e8f7fb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="700">Runtime architecture</text>
+  <text x="40" y="66" fill="#6e8494" font-family="ui-monospace,monospace" font-size="10" letter-spacing="1.4">FROM INTENT TO VERIFIED EXECUTION</text>
+  <g transform="translate(952 28)"><rect width="208" height="38" rx="10" fill="#0c161e" stroke="#1d4954"/><circle cx="22" cy="19" r="5" fill="#00f0ff" filter="url(#glow2)"/><text x="38" y="23" fill="#a6f8ff" font-family="ui-monospace,monospace" font-size="10">CONTROL PATH / NOMINAL</text></g>
+
+  <g transform="translate(40 103)">
+    <rect width="184" height="86" rx="14" fill="url(#panel2)" stroke="#274555"/>
+    <text x="16" y="27" fill="#00f0ff" font-family="ui-monospace,monospace" font-size="10" font-weight="700">01 / SURFACE</text>
+    <text x="16" y="51" fill="#f5f8fa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Intent + interface</text>
+    <text x="16" y="70" fill="#758b9a" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">human input / product UX</text>
+  </g>
+  <g transform="translate(276 103)">
+    <rect width="196" height="86" rx="14" fill="url(#panel2)" stroke="#41511d"/>
+    <text x="16" y="27" fill="#d8f55a" font-family="ui-monospace,monospace" font-size="10" font-weight="700">02 / RUNTIME</text>
+    <text x="16" y="51" fill="#f5f8fa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Reason + route</text>
+    <text x="16" y="70" fill="#758b9a" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">planner / provider / executor</text>
+  </g>
+  <g transform="translate(524 103)">
+    <rect width="196" height="86" rx="14" fill="url(#panel2)" stroke="#5a4218"/>
+    <text x="16" y="27" fill="#ffd700" font-family="ui-monospace,monospace" font-size="10" font-weight="700">03 / POLICY</text>
+    <text x="16" y="51" fill="#f5f8fa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Gate capability</text>
+    <text x="16" y="70" fill="#758b9a" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">auth / scopes / approvals</text>
+  </g>
+  <g transform="translate(772 103)">
+    <rect width="196" height="86" rx="14" fill="url(#panel2)" stroke="#4c2531"/>
+    <text x="16" y="27" fill="#ff6d7c" font-family="ui-monospace,monospace" font-size="10" font-weight="700">04 / TOOLS</text>
+    <text x="16" y="51" fill="#f5f8fa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Perform action</text>
+    <text x="16" y="70" fill="#758b9a" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">APIs / device / workers</text>
+  </g>
+  <g transform="translate(1016 103)">
+    <rect width="144" height="86" rx="14" fill="url(#panel2)" stroke="#235041"/>
+    <text x="16" y="27" fill="#65edba" font-family="ui-monospace,monospace" font-size="10" font-weight="700">05 / STATE</text>
+    <text x="16" y="51" fill="#f5f8fa" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Persist</text>
+    <text x="16" y="70" fill="#758b9a" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">memory / DB</text>
+  </g>
+
+  <path d="M224 146H268" stroke="#46dce8" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M472 146H516" stroke="#46dce8" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M720 146H764" stroke="#46dce8" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <path d="M968 146H1008" stroke="#46dce8" stroke-width="1.6" marker-end="url(#arrow)"/>
+
+  <path d="M1088 189V241H154V218" fill="none" stroke="#274d59" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text x="594" y="231" text-anchor="middle" fill="#496273" font-family="ui-monospace,monospace" font-size="9" letter-spacing="1.5">FEEDBACK / EVIDENCE / STATE TRANSITION</text>
+
+  <g transform="translate(40 263)">
+    <rect width="263" height="112" rx="15" fill="#0c141d" stroke="#223746"/>
+    <text x="16" y="27" fill="#6f8493" font-family="ui-monospace,monospace" font-size="9" letter-spacing="1.2">OBSERVABILITY</text>
+    <text x="16" y="53" fill="#eef5f8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Know what actually happened.</text>
+    <text x="16" y="77" fill="#718797" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">logs · events · traces · typed results</text>
+    <rect x="16" y="90" width="231" height="6" rx="3" fill="#132735"/><rect x="16" y="90" width="174" height="6" rx="3" fill="#00f0ff" opacity="0.7"/>
+  </g>
+  <g transform="translate(328 263)">
+    <rect width="263" height="112" rx="15" fill="#0c141d" stroke="#4a401d"/>
+    <text x="16" y="27" fill="#8d7a31" font-family="ui-monospace,monospace" font-size="9" letter-spacing="1.2">VERIFICATION</text>
+    <text x="16" y="53" fill="#eef5f8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Confidence is not evidence.</text>
+    <text x="16" y="77" fill="#718797" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">tests · checks · fresh runtime proof</text>
+    <g transform="translate(16 89)"><circle cx="5" cy="5" r="5" fill="#ffd700"/><rect x="18" y="2" width="72" height="6" rx="3" fill="#4d421c"/><rect x="98" y="2" width="62" height="6" rx="3" fill="#2d3519"/></g>
+  </g>
+  <g transform="translate(616 263)">
+    <rect width="263" height="112" rx="15" fill="#0c141d" stroke="#4a2730"/>
+    <text x="16" y="27" fill="#965263" font-family="ui-monospace,monospace" font-size="9" letter-spacing="1.2">RECOVERY</text>
+    <text x="16" y="53" fill="#eef5f8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Failure stays diagnosable.</text>
+    <text x="16" y="77" fill="#718797" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">rollback · retry · checkpoints · fallback</text>
+    <path d="M18 96H82L94 86L106 96H171L183 91L195 96H244" fill="none" stroke="#ff6d7c" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(904 263)">
+    <rect width="256" height="112" rx="15" fill="#0c141d" stroke="#255040"/>
+    <text x="16" y="27" fill="#4ea582" font-family="ui-monospace,monospace" font-size="9" letter-spacing="1.2">SHIP CONDITION</text>
+    <text x="16" y="53" fill="#eef5f8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="700">Real path survives.</text>
+    <text x="16" y="77" fill="#718797" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="10">usable · observable · reversible</text>
+    <circle cx="226" cy="94" r="7" fill="#59e7b6"/><circle cx="226" cy="94" r="13" fill="none" stroke="#59e7b6" opacity="0.28"/>
+  </g>
+
+  <text x="40" y="407" fill="#415766" font-family="ui-monospace,monospace" font-size="9" letter-spacing="1.5">THE UI IS THE EDGE. THE SYSTEM IS EVERYTHING BEHIND IT.</text>
+</svg>
