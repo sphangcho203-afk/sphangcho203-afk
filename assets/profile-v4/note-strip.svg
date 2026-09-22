@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="130" viewBox="0 0 1100 130">
+<rect width="1100" height="130" fill="none"/>
+<g font-family="monospace" font-size="20">
+  <g transform="rotate(-3 160 65)">
+    <rect x="40" y="24" width="250" height="74" rx="8" fill="#ffe7f2" stroke="#ff8fbd" stroke-width="2"/>
+    <text x="65" y="58" fill="#53243d">same brain.</text>
+    <text x="65" y="84" fill="#53243d">different day. ♡</text>
+  </g>
+  <g transform="rotate(2 520 65)">
+    <rect x="380" y="18" width="290" height="84" rx="8" fill="#fff8fb" stroke="#d9d9df" stroke-width="2"/>
+    <text x="410" y="55" fill="#3d3d46">good ideas</text>
+    <text x="410" y="82" fill="#3d3d46">bad sleep</text>
+    <text x="530" y="82" fill="#ff5ca9">excellent taste ♡</text>
+  </g>
+  <g transform="rotate(-2 880 65)">
+    <rect x="780" y="28" width="245" height="70" rx="8" fill="#111318" stroke="#ff5ca9" stroke-width="2"/>
+    <text x="812" y="58" fill="#ff9bc9">still building...</text>
+    <text x="812" y="83" fill="#cfcfd6">do not disturb</text>
+  </g>
+</g>
+</svg>
