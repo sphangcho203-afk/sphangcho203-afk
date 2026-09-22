@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="80" viewBox="0 0 1100 80">
+<rect width="1100" height="80" fill="none"/>
+<path d="M20 40 C140 5 250 72 390 40 S650 10 790 40 S980 68 1080 40" fill="none" stroke="#ff69ad" stroke-width="2.5" opacity=".6"/>
+<circle cx="550" cy="40" r="5" fill="#ff69ad"/>
+<text x="574" y="46" font-family="monospace" font-size="15" fill="#8b7a83">build • observe • verify • recover • ship</text>
+</svg>

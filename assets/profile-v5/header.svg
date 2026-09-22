@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1">
+    <stop offset="0" stop-color="#0d0d12"/>
+    <stop offset=".55" stop-color="#131319"/>
+    <stop offset="1" stop-color="#1c1018"/>
+  </linearGradient>
+  <linearGradient id="line" x1="0" x2="1">
+    <stop offset="0" stop-color="#ff98c7"/>
+    <stop offset="1" stop-color="#ff4ea4"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="250" rx="24" fill="url(#bg)"/>
+<circle cx="1080" cy="35" r="110" fill="#ff4ea4" opacity=".07"/>
+<circle cx="60" cy="240" r="120" fill="#ff4ea4" opacity=".05"/>
+<text x="56" y="55" font-family="monospace" font-size="17" fill="#8f8991">~/profile/README.md</text>
+<text x="56" y="142" font-family="sans-serif" font-weight="800" font-size="70" fill="#ffffff">SEONGJA.EXE</text>
+<rect x="58" y="164" width="430" height="5" rx="3" fill="url(#line)"/>
+<text x="58" y="204" font-family="monospace" font-size="21" fill="#f4bad4">systems • code • anime • late-night ideas</text>
+<g transform="translate(860 56) rotate(-4)">
+  <rect width="245" height="74" rx="10" fill="#fff7fb"/>
+  <text x="18" y="31" font-family="monospace" font-size="16" fill="#44343d">status:</text>
+  <text x="18" y="54" font-family="monospace" font-size="18" fill="#ff4ea4">still building ♡</text>
+</g>
+<text x="938" y="182" font-family="sans-serif" font-size="20" fill="#d8d1d6" transform="rotate(3 938 182)">same brain. different day.</text>
+</svg>
