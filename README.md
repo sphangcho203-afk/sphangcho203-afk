@@ -3,32 +3,34 @@
 </p>
 
 <p align="center">
-  <img src="./assets/profile-v5/decals.svg" width="96%" alt="profile stickers" />
+  <img src="./assets/profile-v6/moodboard.svg" width="100%" alt="status deck" />
 </p>
 
 <table>
 <tr>
-<td width="17%" align="center" valign="middle">
-  <img src="./assets/profile-v3/neon-girl.webp" width="126" alt="anime sticker" />
+<td width="18%" align="center" valign="middle">
+  <img src="./assets/profile-v3/neon-girl.webp" width="130" alt="anime sticker" />
 </td>
-<td width="66%" valign="middle">
+<td width="64%" valign="middle">
 
-## hey, i'm Seongja ♡
+## hey — Seongja here ♡
 
-I build **AI systems, web products, automation, tool runtimes, integrations and experiments** — usually with too many tabs open and at least one idea becoming five.
+I build **AI systems, web products, automation, agents, tool runtimes and strange experiments**.
+
+The goal is simple: make things that look good **and** survive the real execution path.
 
 <code>systems</code> · <code>code</code> · <code>anime</code> · <code>games</code> · <code>late nights</code>
 
-> trying to make software feel less generic and more alive.
-
 </td>
-<td width="17%" align="center" valign="middle">
-  <img src="./assets/profile-v3/code-cat.webp" width="86" alt="code cat sticker" />
+<td width="18%" align="center" valign="middle">
+  <img src="./assets/sticker-girl-base.png" width="116" alt="anime sticker" />
 </td>
 </tr>
 </table>
 
----
+<p align="center">
+  <img src="./assets/profile-v6/tape-divider.svg" width="96%" alt="divider" />
+</p>
 
 <table>
 <tr>
@@ -37,40 +39,49 @@ I build **AI systems, web products, automation, tool runtimes, integrations and 
 ### $ whoami
 
 <pre>
-&gt; anime enjoyer
 &gt; builder
+&gt; anime enjoyer
 &gt; systems thinker
 &gt; jungle main
 &gt; terminal resident
-&gt; still figuring it out...
+&gt; UI critic
+&gt; still building...
 </pre>
 
 </td>
 <td width="52%" valign="top">
 
-### 🧠 currently in RAM
+### 🧠 active processes
 
-- [x] build useful things
-- [x] connect tools that normally do not talk
+- [x] build instead of only planning
+- [x] connect agents, APIs, DBs and tools
 - [x] make interfaces feel intentional
-- [x] verify the real execution path
+- [x] verify external actions
 - [ ] finish one idea before spawning five
-- [ ] make sleep.exe behave normally
+- [ ] patch sleep.exe
 
 </td>
 </tr>
 </table>
+
+<p align="center">
+  <img src="./assets/profile-divider.gif" width="92%" alt="animated divider" />
+</p>
 
 <table>
 <tr>
-<td width="15%" align="center">
-  <img src="./assets/profile-v3/heart-chibi.webp" width="92" alt="anime sticker" />
+<td width="17%" align="center" valign="middle">
+  <img src="./assets/anime-girl-916.png" width="108" alt="anime sticker" />
 </td>
-<td width="85%" valign="middle">
+<td width="83%" valign="middle">
 
-### tiny rules inside the machine
+## &lt;/&gt; toolbox
 
-**models reason; tools prove** · state needs an owner · failures should be inspectable · recovery is a feature · screenshots are not proof · strange ideas deserve prototypes
+<p>
+  <img src="https://skillicons.dev/icons?i=ts,js,python,go,kotlin,react,nextjs,nodejs,postgres,prisma,supabase,vercel,docker,git,github,linux" alt="technology stack" />
+</p>
+
+<code>agents</code> <code>MCP</code> <code>APIs</code> <code>automation</code> <code>Android</code> <code>tool calling</code> <code>web systems</code>
 
 </td>
 </tr>
@@ -78,32 +89,14 @@ I build **AI systems, web products, automation, tool runtimes, integrations and 
 
 ---
 
-## &lt;/&gt; tech stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,go,kotlin,react,nextjs,nodejs,postgres,prisma,supabase,vercel,docker,git,github,linux" alt="technology stack" />
-</p>
-
-<p align="center">
-  <code>agents</code>
-  <code>MCP</code>
-  <code>APIs</code>
-  <code>automation</code>
-  <code>Android</code>
-  <code>tool calling</code>
-  <code>web systems</code>
-</p>
-
----
-
-## ☆ things I'm building
+## ☆ selected builds
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
 ### 🎮 [Recharza](https://github.com/sphangcho203-afk/recharza-platform)
-Game top-up platform with a full storefront/runtime stack.
+Game top-up platform and storefront system.
 
 <sub>Next.js · TypeScript · Postgres</sub>
 
@@ -111,85 +104,83 @@ Game top-up platform with a full storefront/runtime stack.
 <td width="33%" valign="top">
 
 ### 🤖 [Nexus](https://github.com/sphangcho203-afk/ai-chatbot-v1)
-Multi-user AI chatbot with routing and user-owned tools.
+Multi-user AI runtime with routing and user-owned tools.
 
-<sub>AI · Agents · Next.js</sub>
+<sub>Agents · Next.js · integrations</sub>
 
 </td>
 <td width="33%" valign="top">
 
 ### ⚙️ [Telegram Agent OS](https://github.com/sphangcho203-afk/telegram-agent-os)
-Telegram-native agent experiments with MCP execution.
+Telegram-native agent + MCP execution experiments.
 
-<sub>Telegram · MCP · Automation</sub>
+<sub>Telegram · MCP · automation</sub>
 
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="./assets/profile-v5/footer-line.svg" width="94%" alt="divider" />
+  <img src="./assets/profile-v6/tape-divider.svg" width="96%" alt="divider" />
 </p>
+
+## signal feed
 
 <table>
 <tr>
-<td width="20%" align="center" valign="middle">
-  <img src="./assets/sticker-girl-base.png" width="112" alt="anime sticker" />
+<td width="50%" align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=sphangcho203-afk&amp;show_icons=true&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=ff69ad&amp;text_color=8b949e&amp;icon_color=ff69ad&amp;rank_icon=github" width="98%" alt="GitHub stats" />
 </td>
-<td width="60%" align="center" valign="middle">
-
-## ♪ toyoki mode
-
-<code>hand signs → turn → fake tear → bounce → repeat</code>
-
-tiny dance break between two engineering decisions.
-
-</td>
-<td width="20%" align="center" valign="middle">
-
-### now playing
-
-TOYOKI  
-anime OSTs  
-whatever keeps the terminal alive
-
+<td width="50%" align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sphangcho203-afk&amp;layout=compact&amp;hide_border=true&amp;bg_color=00000000&amp;title_color=ff69ad&amp;text_color=8b949e" width="98%" alt="Top languages" />
 </td>
 </tr>
 </table>
 
----
+<table>
+<tr>
+<td width="21%" align="center" valign="middle">
+  <img src="./assets/profile-v3/heart-chibi.webp" width="115" alt="anime dance sticker" />
+</td>
+<td width="58%" align="center" valign="middle">
+
+## ♪ TOYOKI MODE
+
+<code>hand signs → turn → fake tear → bounce → repeat</code>
+
+small dance break between two suspicious engineering decisions.
+
+</td>
+<td width="21%" align="center" valign="middle">
+  <img src="./assets/profile-v3/code-cat.webp" width="88" alt="code cat" />
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <img src="./assets/profile-v6/tape-divider.svg" width="96%" alt="divider" />
+</p>
 
 <table>
 <tr>
-<td width="56%" valign="top">
+<td width="58%" valign="middle">
 
-### current vector
+## build loop
 
-<pre>
-idea
- ↓
-prototype
- ↓
-break
- ↓
-inspect
- ↓
-fix
- ↓
-ship
- ↺
-</pre>
+<img src="./assets/profile-build-loop.svg" width="100%" alt="build loop" />
 
 </td>
-<td width="44%" valign="top">
+<td width="42%" valign="top">
 
-### still building...
+### operating rules
 
-♡ cleaner systems  
-♡ better interfaces  
-♡ stranger experiments  
-♡ fewer mysterious bugs  
-♡ more things worth shipping
+- **models reason; tools prove**
+- state needs an owner
+- failures should be inspectable
+- recovery is a product feature
+- screenshots are not proof
+- clean UI ≠ fake functionality
+- weird ideas deserve prototypes
 
 </td>
 </tr>
@@ -199,23 +190,21 @@ ship
 <summary><b>📁 open the suspicious folder</b></summary>
 <br/>
 
-- I care about the real runtime path, not only the screenshot.
-- If an external action matters, verify it.
-- If an API can fail, the product should know what failure means.
-- If state exists, somebody should own it.
-- Clean UI and reliable systems should coexist.
-- Anime decorations are not a production incident.
+<code>idea → prototype → break → inspect → fix → verify → ship → repeat</code>
+
+I care more about the real execution path than the screenshot. If something calls an API, changes external state, handles auth, touches money, or claims success — I want the evidence path to exist too.
 
 </details>
 
 <br/>
 
 <p align="center">
-  <img src="./assets/profile-v5/footer-line.svg" width="94%" alt="footer divider" />
+  <img src="./assets/profile-footer.gif" width="88%" alt="animated footer" />
 </p>
 
 <p align="center">
-  <sub>somewhere between reality and anime, still building.</sub>
+  <sub>somewhere between reality and anime, still building.</sub><br/>
+  <b>BUILD · OBSERVE · VERIFY · RECOVER · SHIP</b>
 </p>
 
 <!-- public profile only: no credentials, private architecture, or private operational details -->
