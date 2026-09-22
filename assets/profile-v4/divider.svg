@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="52" viewBox="0 0 1100 52">
+<path d="M15 26 C150 5 230 47 360 26 S590 6 730 26 S930 48 1085 26" fill="none" stroke="#ff6aad" stroke-width="3" opacity=".65"/>
+<circle cx="548" cy="26" r="6" fill="#ff6aad"/>
+<text x="570" y="32" font-family="monospace" font-size="17" fill="#8b6b7b">build • break • learn • repeat</text>
+</svg>
