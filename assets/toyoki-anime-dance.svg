@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffd6f6"/><stop offset=".48" stop-color="#d8e7ff"/><stop offset="1" stop-color="#fff0b8"/>
+  </linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity=".2"/></filter>
+</defs>
+<rect width="900" height="420" rx="28" fill="url(#bg)"/>
+<g opacity=".18" fill="#ff4fc8">
+  <circle cx="80" cy="70" r="12"/><circle cx="820" cy="90" r="18"/><circle cx="115" cy="340" r="19"/>
+  <path d="M760 330l10 20 22 3-16 15 4 22-20-10-20 10 4-22-16-15 22-3z"/>
+</g>
+<text x="450" y="44" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="22" fill="#5d3b66">TOYOKI 落泪 · anime gesture-dance loop ✦</text>
+
+<g id="girl" filter="url(#shadow)" transform="translate(450 235)">
+  <animateTransform attributeName="transform" additive="sum" type="translate"
+    values="0 0;-9 -4;8 -6;-4 0;0 0" dur="2.4s" repeatCount="indefinite"/>
+  <!-- hair -->
+  <ellipse cx="0" cy="-95" rx="74" ry="82" fill="#2d2440"/>
+  <path d="M-65-100 Q-85-20 -55 50 L-14 5 L-8-95Z" fill="#34284a"/>
+  <path d="M65-100 Q85-20 55 50 L14 5 L8-95Z" fill="#34284a"/>
+  <!-- face -->
+  <ellipse cx="0" cy="-92" rx="54" ry="60" fill="#ffe8dc"/>
+  <path d="M-49-117 Q0-160 50-116 Q17-130 -2-113 Q-22-132 -49-117Z" fill="#2d2440"/>
+  <ellipse cx="-20" cy="-92" rx="7" ry="10" fill="#4b355d"/><ellipse cx="20" cy="-92" rx="7" ry="10" fill="#4b355d"/>
+  <circle cx="-18" cy="-95" r="2.2" fill="white"/><circle cx="22" cy="-95" r="2.2" fill="white"/>
+  <path d="M-12-67 Q0-58 12-67" stroke="#d67789" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <!-- body -->
+  <path d="M-58-30 Q0-5 58-30 L74 102 Q0 135-74 102Z" fill="#ffffff"/>
+  <path d="M-58-30 Q0 12 58-30" stroke="#ff86cf" stroke-width="8" fill="none"/>
+  <path d="M-54 73 L-95 165 L-34 165 L0 90 L34 165 L95 165 L54 73Z" fill="#4b355d"/>
+  <!-- left arm gesture -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="-35 -46 -20;15 -46 -20;48 -46 -20;5 -46 -20;-35 -46 -20" dur="2.4s" repeatCount="indefinite"/>
+    <rect x="-58" y="-28" width="24" height="105" rx="12" fill="#ffe8dc" transform="rotate(17 -46 -20)"/>
+    <circle cx="-72" cy="69" r="15" fill="#ffe8dc"/>
+    <path d="M-82 66 q10-20 20 0 M-78 72 q8-12 16 0" stroke="#d67789" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- right arm gesture -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate"
+      values="35 46 -20;-15 46 -20;-48 46 -20;-5 46 -20;35 46 -20" dur="2.4s" repeatCount="indefinite"/>
+    <rect x="34" y="-28" width="24" height="105" rx="12" fill="#ffe8dc" transform="rotate(-17 46 -20)"/>
+    <circle cx="72" cy="69" r="15" fill="#ffe8dc"/>
+    <path d="M62 66 q10-20 20 0 M66 72 q8-12 16 0" stroke="#d67789" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- sparkle / fake tear -->
+  <circle cx="37" cy="-76" r="6" fill="#7ec8ff">
+    <animate attributeName="cy" values="-76;-62;-76" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<g font-family="sans-serif" font-size="15" fill="#6d5277">
+  <text x="32" y="390">hand-sign → turn → “tear” beat → bounce → loop</text>
+  <text x="868" y="390" text-anchor="end">messy anime mode: ON ✧</text>
+</g>
+</svg>
