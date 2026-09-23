@@ -82,14 +82,11 @@ Telegram-native agent experiments with MCP execution.
 ---
 
 <p align="center">
-  <img src="./assets/profile-v3/heart-chibi.webp" width="118" alt="Toyoki anime sticker" />
+  <img src="./assets/profile-v8/cat-dance.svg" width="94%" alt="dancing cats" />
 </p>
 
-<h3 align="center">♪ toyoki mode</h3>
-
 <p align="center">
-  <code>hand signs → turn → fake tear → bounce → repeat</code><br/><br/>
-  tiny reset before going back to the code.
+  <sub>tiny reset before going back to the code.</sub>
 </p>
 
 <p align="center">
