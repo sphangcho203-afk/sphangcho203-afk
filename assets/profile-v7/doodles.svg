@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="68" viewBox="0 0 1100 68">
+<rect width="1100" height="68" fill="none"/>
+<path d="M22 36 C140 12 250 58 390 36 S650 14 790 36 S975 56 1078 36" fill="none" stroke="#ff7db8" stroke-width="2" opacity=".45"/>
+<g font-family="monospace" font-size="13" fill="#9a8792">
+  <text x="80" y="25" transform="rotate(-4 80 25)">coffee?</text>
+  <text x="470" y="58" transform="rotate(2 470 58)">commit first. panic later.</text>
+  <text x="900" y="24" transform="rotate(4 900 24)">♡</text>
+</g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1">
+    <stop offset="0" stop-color="#0d0e12"/>
+    <stop offset=".55" stop-color="#111218"/>
+    <stop offset="1" stop-color="#1a1017"/>
+  </linearGradient>
+</defs>
+<rect width="1200" height="170" rx="22" fill="url(#bg)"/>
+<text x="58" y="48" font-family="monospace" font-size="15" fill="#77727a">~/sphangcho203-afk</text>
+<text x="58" y="112" font-family="sans-serif" font-weight="800" font-size="58" fill="#ffffff">SEONGJA</text>
+<rect x="58" y="128" width="245" height="4" rx="2" fill="#ff68ad"/>
+<text x="330" y="112" font-family="monospace" font-size="17" fill="#c8bdc4">code · systems · anime · games</text>
+<g fill="none" stroke="#ff68ad" stroke-width="3" opacity=".8">
+  <path d="M986 45 q12-18 24 0 q12-18 24 0 q0 25-24 38 q-24-13-24-38"/>
+  <path d="M1070 112 l9-18 9 18 20 3-15 14 4 20-18-9-18 9 4-20-15-14z"/>
+</g>
+<text x="902" y="126" font-family="monospace" font-size="14" fill="#8f8790">hello, world ♡</text>
+</svg>
