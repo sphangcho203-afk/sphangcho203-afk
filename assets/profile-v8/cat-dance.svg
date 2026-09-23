@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="900" height="190" role="img" aria-label="dancing cats">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#5f3a48" flood-opacity=".16"/>
+    </filter>
+    <style>
+      .cat{transform-box:fill-box;transform-origin:center bottom;animation:sway 1.18s ease-in-out infinite}
+      .pawL,.pawR{transform-box:fill-box;transform-origin:center center}
+      .pawL{animation:pawL 1.18s ease-in-out infinite}
+      .pawR{animation:pawR 1.18s ease-in-out infinite}
+      .ear,.body,.paw{stroke:#3b2b33;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}
+      .face{stroke:#3b2b33;stroke-width:3.2;stroke-linecap:round;fill:none}
+      .spark{animation:twinkle 1.18s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .c2,.c2 .pawL,.c2 .pawR,.s2{animation-delay:-.18s}
+      .c3,.c3 .pawL,.c3 .pawR,.s3{animation-delay:-.42s}
+      .c4,.c4 .pawL,.c4 .pawR,.s4{animation-delay:-.68s}
+      .c5,.c5 .pawL,.c5 .pawR,.s5{animation-delay:-.88s}
+      @keyframes sway{
+        0%,100%{transform:translateY(2px) rotate(-5deg)}
+        25%{transform:translateY(-6px) rotate(1deg)}
+        50%{transform:translateY(1px) rotate(6deg)}
+        75%{transform:translateY(-7px) rotate(-1deg)}
+      }
+      @keyframes pawL{
+        0%,100%{transform:translate(-2px,2px) rotate(-16deg)}
+        50%{transform:translate(8px,-7px) rotate(18deg)}
+      }
+      @keyframes pawR{
+        0%,100%{transform:translate(5px,-6px) rotate(14deg)}
+        50%{transform:translate(-5px,3px) rotate(-18deg)}
+      }
+      @keyframes twinkle{
+        0%,100%{opacity:.18;transform:scale(.72) rotate(0)}
+        50%{opacity:.82;transform:scale(1.05) rotate(12deg)}
+      }
+      @media (prefers-reduced-motion:reduce){
+        .cat,.pawL,.pawR,.spark{animation:none!important}
+      }
+    </style>
+  </defs>
+
+  <path d="M55 151 C185 180 265 137 378 153 S610 181 845 145" fill="none" stroke="#d9a5b8" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <path d="M96 164 C255 130 320 175 469 159 S696 131 812 162" fill="none" stroke="#ead1da" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+
+  <g class="spark s1" fill="#d66b98"><path d="M92 48 l5 9 9 5-9 5-5 9-5-9-9-5 9-5z"/></g>
+  <g class="spark s2" fill="#e8b2c7"><circle cx="253" cy="38" r="6"/></g>
+  <g class="spark s3" fill="#d66b98"><path d="M449 35 l4 7 7 4-7 4-4 7-4-7-7-4 7-4z"/></g>
+  <g class="spark s4" fill="#e8b2c7"><circle cx="652" cy="44" r="5"/></g>
+  <g class="spark s5" fill="#d66b98"><path d="M819 54 l4 7 7 4-7 4-4 7-4-7-7-4 7-4z"/></g>
+
+  <g class="cat c1" transform="translate(85 46)" filter="url(#shadow)">
+    <path class="ear" fill="#f8e8ee" d="M15 35 L25 9 L43 28 Q60 21 76 28 L95 9 L103 38 Q114 54 109 86 Q105 122 62 126 Q20 123 15 88 Q10 57 15 35Z"/>
+    <path class="face" d="M45 58 q7 7 14 0 M68 58 q7 7 14 0 M61 70 q4 4 8 0"/>
+    <path class="paw pawL" fill="#fff7fa" d="M28 77 q13-16 29-3 l15 18 q5 7-2 13 q-7 6-13 0L40 94 q-13 3-17-6 q-4-7 5-11z"/>
+    <path class="paw pawR" fill="#fff7fa" d="M86 72 q-9-13-22-5 l-20 17 q-8 7-2 14 q6 7 14 2 l18-10 q9 5 15-2 q5-8-3-16z"/>
+    <path class="face" d="M35 45 l8-3 M83 43 l8 4"/>
+  </g>
+
+  <g class="cat c2" transform="translate(245 48)" filter="url(#shadow)">
+    <path class="ear" fill="#2d2b34" d="M14 36 L23 8 L43 27 Q61 20 78 29 L98 10 L104 39 Q114 55 109 87 Q103 122 62 126 Q20 123 14 88 Q9 57 14 36Z"/>
+    <path class="face" stroke="#f4c4d5" d="M43 58 q7 7 14 0 M69 58 q7 7 14 0 M61 70 q4 4 8 0"/>
+    <path class="paw pawL" fill="#f6eff2" d="M29 77 q13-16 29-3 l15 18 q5 7-2 13 q-7 6-13 0L41 94 q-13 3-17-6 q-4-7 5-11z"/>
+    <path class="paw pawR" fill="#f6eff2" d="M87 72 q-9-13-22-5 l-20 17 q-8 7-2 14 q6 7 14 2 l18-10 q9 5 15-2 q5-8-3-16z"/>
+  </g>
+
+  <g class="cat c3" transform="translate(405 44)" filter="url(#shadow)">
+    <path class="ear" fill="#f4d8b8" d="M14 36 L24 9 L43 28 Q61 20 78 28 L97 9 L104 38 Q114 54 109 87 Q103 122 62 126 Q20 123 14 88 Q9 57 14 36Z"/>
+    <path class="face" d="M43 58 q7 7 14 0 M69 58 q7 7 14 0 M61 70 q4 4 8 0"/>
+    <path class="paw pawL" fill="#fff9f2" d="M29 77 q13-16 29-3 l15 18 q5 7-2 13 q-7 6-13 0L41 94 q-13 3-17-6 q-4-7 5-11z"/>
+    <path class="paw pawR" fill="#fff9f2" d="M87 72 q-9-13-22-5 l-20 17 q-8 7-2 14 q6 7 14 2 l18-10 q9 5 15-2 q5-8-3-16z"/>
+    <circle cx="52" cy="48" r="3" fill="#d66b98"/><circle cx="76" cy="48" r="3" fill="#d66b98"/>
+  </g>
+
+  <g class="cat c4" transform="translate(565 47)" filter="url(#shadow)">
+    <path class="ear" fill="#cbd5e1" d="M14 36 L23 8 L43 27 Q60 20 78 29 L98 10 L104 39 Q114 55 109 87 Q103 122 62 126 Q20 123 14 88 Q9 57 14 36Z"/>
+    <path class="face" d="M43 58 q7 7 14 0 M69 58 q7 7 14 0 M61 70 q4 4 8 0"/>
+    <path class="paw pawL" fill="#f7f9fb" d="M29 77 q13-16 29-3 l15 18 q5 7-2 13 q-7 6-13 0L41 94 q-13 3-17-6 q-4-7 5-11z"/>
+    <path class="paw pawR" fill="#f7f9fb" d="M87 72 q-9-13-22-5 l-20 17 q-8 7-2 14 q6 7 14 2 l18-10 q9 5 15-2 q5-8-3-16z"/>
+    <path d="M28 31 q16 5 24-3" fill="none" stroke="#d66b98" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g class="cat c5" transform="translate(725 45)" filter="url(#shadow)">
+    <path class="ear" fill="#f7f3f5" d="M14 36 L23 8 L43 27 Q60 20 78 29 L98 10 L104 39 Q114 55 109 87 Q103 122 62 126 Q20 123 14 88 Q9 57 14 36Z"/>
+    <path class="face" d="M43 58 q7 7 14 0 M69 58 q7 7 14 0 M61 70 q4 4 8 0"/>
+    <path class="paw pawL" fill="#f0d0dc" d="M29 77 q13-16 29-3 l15 18 q5 7-2 13 q-7 6-13 0L41 94 q-13 3-17-6 q-4-7 5-11z"/>
+    <path class="paw pawR" fill="#f0d0dc" d="M87 72 q-9-13-22-5 l-20 17 q-8 7-2 14 q6 7 14 2 l18-10 q9 5 15-2 q5-8-3-16z"/>
+    <path d="M90 31 q9 2 13 11" fill="none" stroke="#d66b98" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
